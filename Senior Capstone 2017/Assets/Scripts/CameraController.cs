@@ -8,17 +8,23 @@ public class CameraController : MonoBehaviour {
 	public float speed;
 	public float cameraZoom;
 	Camera mainCamera;
+	int tilesPerColumn;
 
 	// Use this for initialization
 	void Start () {
 		mainCamera = GetComponent<Camera> ();
+		tilesPerColumn = 10;
+	}
+
+	Vector3 targetPosition () {
+		return target.position + new Vector3 (1, -1, 0);
 	}
 
 	// Update is called once per frame
 	void Update () {
-		mainCamera.orthographicSize = Screen.height / (100f * cameraZoom);
+		mainCamera.orthographicSize = Screen.height / 64f / cameraZoom;
 
-		Vector3 lerp = Vector2.Lerp (transform.position, target.position, speed);
+		Vector3 lerp = Vector2.Lerp (transform.position, targetPosition(), speed);
 		lerp.z = -10;
 		transform.position = lerp;
 	}

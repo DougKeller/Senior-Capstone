@@ -18,7 +18,7 @@ public class PlayerMovementController : MonoBehaviour {
 		rigidBody.freezeRotation = true;
 		animator = GetComponent<Animator> ();
 
-		baseSpeed = 5;
+		baseSpeed = 3f;
 		runMultiplier = 2f;
 		stamina = 100f;
 		runCost = 5f;
