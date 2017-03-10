@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 91698d2d07f044b9680ac716c4c72c25
-timeCreated: 1489166093
+timeCreated: 1489177294
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -206,6 +206,31 @@ TextureImporter:
     21300398: character_rapier_199
     21300400: character_rapier_200
     21300402: character_rapier_201
+    21300404: character_rapier_202
+    21300406: character_rapier_203
+    21300408: character_rapier_204
+    21300410: character_rapier_205
+    21300412: character_rapier_206
+    21300414: character_rapier_207
+    21300416: character_rapier_208
+    21300418: character_rapier_209
+    21300420: character_rapier_210
+    21300422: character_rapier_211
+    21300424: character_rapier_212
+    21300426: character_rapier_213
+    21300428: character_rapier_214
+    21300430: character_rapier_215
+    21300432: character_rapier_216
+    21300434: character_rapier_217
+    21300436: character_rapier_218
+    21300438: character_rapier_219
+    21300440: character_rapier_220
+    21300442: character_rapier_221
+    21300444: character_rapier_222
+    21300446: character_rapier_223
+    21300448: character_rapier_224
+    21300450: character_rapier_225
+    21300452: character_rapier_226
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -229,7 +254,7 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 1
     aniso: -1
     mipBias: -1
     wrapMode: 1
@@ -242,7 +267,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -283,10 +308,10 @@ TextureImporter:
       name: character_rapier_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 2049
-        width: 32
-        height: 50
+        x: 0
+        y: 2048
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,10 +321,10 @@ TextureImporter:
       name: character_rapier_1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 2049
-        width: 30
-        height: 50
+        x: 64
+        y: 2048
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,10 +334,10 @@ TextureImporter:
       name: character_rapier_2
       rect:
         serializedVersion: 2
-        x: 145
-        y: 2049
-        width: 30
-        height: 50
+        x: 128
+        y: 2048
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,10 +347,10 @@ TextureImporter:
       name: character_rapier_3
       rect:
         serializedVersion: 2
-        x: 205
-        y: 2049
-        width: 38
-        height: 50
+        x: 192
+        y: 2048
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,10 +360,10 @@ TextureImporter:
       name: character_rapier_4
       rect:
         serializedVersion: 2
-        x: 262
-        y: 2049
-        width: 52
-        height: 50
+        x: 256
+        y: 2048
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,10 +373,10 @@ TextureImporter:
       name: character_rapier_5
       rect:
         serializedVersion: 2
-        x: 327
-        y: 2049
-        width: 50
-        height: 50
+        x: 320
+        y: 2048
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -361,10 +386,10 @@ TextureImporter:
       name: character_rapier_6
       rect:
         serializedVersion: 2
-        x: 397
-        y: 2049
-        width: 38
-        height: 50
+        x: 384
+        y: 2048
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,10 +399,10 @@ TextureImporter:
       name: character_rapier_7
       rect:
         serializedVersion: 2
-        x: 21
-        y: 1985
-        width: 23
-        height: 50
+        x: 0
+        y: 1984
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -387,10 +412,10 @@ TextureImporter:
       name: character_rapier_8
       rect:
         serializedVersion: 2
-        x: 84
-        y: 1985
-        width: 25
-        height: 50
+        x: 64
+        y: 1984
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,10 +425,10 @@ TextureImporter:
       name: character_rapier_9
       rect:
         serializedVersion: 2
-        x: 149
-        y: 1985
-        width: 23
-        height: 50
+        x: 128
+        y: 1984
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,10 +438,10 @@ TextureImporter:
       name: character_rapier_10
       rect:
         serializedVersion: 2
-        x: 211
-        y: 1985
-        width: 28
-        height: 50
+        x: 192
+        y: 1984
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,10 +451,10 @@ TextureImporter:
       name: character_rapier_11
       rect:
         serializedVersion: 2
-        x: 273
-        y: 1985
-        width: 35
-        height: 50
+        x: 256
+        y: 1984
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,10 +464,10 @@ TextureImporter:
       name: character_rapier_12
       rect:
         serializedVersion: 2
-        x: 337
-        y: 1985
-        width: 35
-        height: 50
+        x: 320
+        y: 1984
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,10 +477,10 @@ TextureImporter:
       name: character_rapier_13
       rect:
         serializedVersion: 2
-        x: 403
-        y: 1985
-        width: 30
-        height: 50
+        x: 384
+        y: 1984
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -465,10 +490,10 @@ TextureImporter:
       name: character_rapier_14
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1921
-        width: 32
-        height: 51
+        x: 0
+        y: 1920
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,10 +503,10 @@ TextureImporter:
       name: character_rapier_15
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1921
-        width: 32
-        height: 51
+        x: 64
+        y: 1920
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,10 +516,10 @@ TextureImporter:
       name: character_rapier_16
       rect:
         serializedVersion: 2
-        x: 145
-        y: 1921
-        width: 30
-        height: 51
+        x: 128
+        y: 1920
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -504,10 +529,10 @@ TextureImporter:
       name: character_rapier_17
       rect:
         serializedVersion: 2
-        x: 205
-        y: 1921
-        width: 38
-        height: 51
+        x: 192
+        y: 1920
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -517,10 +542,10 @@ TextureImporter:
       name: character_rapier_18
       rect:
         serializedVersion: 2
-        x: 262
-        y: 1921
-        width: 52
-        height: 51
+        x: 256
+        y: 1920
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -530,10 +555,10 @@ TextureImporter:
       name: character_rapier_19
       rect:
         serializedVersion: 2
-        x: 327
-        y: 1921
-        width: 50
-        height: 51
+        x: 320
+        y: 1920
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -543,10 +568,10 @@ TextureImporter:
       name: character_rapier_20
       rect:
         serializedVersion: 2
-        x: 398
-        y: 1921
-        width: 36
-        height: 51
+        x: 384
+        y: 1920
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -556,10 +581,10 @@ TextureImporter:
       name: character_rapier_21
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1857
-        width: 23
-        height: 50
+        x: 0
+        y: 1856
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -569,10 +594,10 @@ TextureImporter:
       name: character_rapier_22
       rect:
         serializedVersion: 2
-        x: 83
-        y: 1857
-        width: 25
-        height: 50
+        x: 64
+        y: 1856
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -582,10 +607,10 @@ TextureImporter:
       name: character_rapier_23
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1857
-        width: 23
-        height: 50
+        x: 128
+        y: 1856
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -595,10 +620,10 @@ TextureImporter:
       name: character_rapier_24
       rect:
         serializedVersion: 2
-        x: 209
-        y: 1857
-        width: 28
-        height: 50
+        x: 192
+        y: 1856
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -608,10 +633,10 @@ TextureImporter:
       name: character_rapier_25
       rect:
         serializedVersion: 2
-        x: 268
-        y: 1857
-        width: 35
-        height: 50
+        x: 256
+        y: 1856
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -621,10 +646,10 @@ TextureImporter:
       name: character_rapier_26
       rect:
         serializedVersion: 2
-        x: 332
-        y: 1857
-        width: 35
-        height: 50
+        x: 320
+        y: 1856
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -634,10 +659,10 @@ TextureImporter:
       name: character_rapier_27
       rect:
         serializedVersion: 2
-        x: 399
-        y: 1857
-        width: 31
-        height: 50
+        x: 384
+        y: 1856
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -647,10 +672,10 @@ TextureImporter:
       name: character_rapier_28
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1793
-        width: 32
-        height: 50
+        x: 0
+        y: 1792
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -660,10 +685,10 @@ TextureImporter:
       name: character_rapier_29
       rect:
         serializedVersion: 2
-        x: 83
-        y: 1791
-        width: 28
-        height: 51
+        x: 64
+        y: 1792
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -673,10 +698,10 @@ TextureImporter:
       name: character_rapier_30
       rect:
         serializedVersion: 2
-        x: 149
-        y: 1791
-        width: 24
-        height: 52
+        x: 128
+        y: 1792
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -686,10 +711,10 @@ TextureImporter:
       name: character_rapier_31
       rect:
         serializedVersion: 2
-        x: 213
-        y: 1791
-        width: 24
-        height: 52
+        x: 192
+        y: 1792
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -699,10 +724,10 @@ TextureImporter:
       name: character_rapier_32
       rect:
         serializedVersion: 2
-        x: 278
-        y: 1791
-        width: 24
-        height: 51
+        x: 256
+        y: 1792
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -712,10 +737,10 @@ TextureImporter:
       name: character_rapier_33
       rect:
         serializedVersion: 2
-        x: 342
-        y: 1791
-        width: 24
-        height: 51
+        x: 320
+        y: 1792
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -725,10 +750,10 @@ TextureImporter:
       name: character_rapier_34
       rect:
         serializedVersion: 2
-        x: 406
-        y: 1791
-        width: 24
-        height: 51
+        x: 384
+        y: 1792
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -738,10 +763,10 @@ TextureImporter:
       name: character_rapier_35
       rect:
         serializedVersion: 2
-        x: 469
-        y: 1791
-        width: 25
-        height: 52
+        x: 448
+        y: 1792
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -751,10 +776,10 @@ TextureImporter:
       name: character_rapier_36
       rect:
         serializedVersion: 2
-        x: 21
-        y: 1729
-        width: 23
-        height: 50
+        x: 0
+        y: 1728
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -764,10 +789,10 @@ TextureImporter:
       name: character_rapier_37
       rect:
         serializedVersion: 2
-        x: 82
-        y: 1729
-        width: 27
-        height: 50
+        x: 64
+        y: 1728
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -777,10 +802,10 @@ TextureImporter:
       name: character_rapier_38
       rect:
         serializedVersion: 2
-        x: 146
-        y: 1729
-        width: 29
-        height: 50
+        x: 128
+        y: 1728
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -790,10 +815,10 @@ TextureImporter:
       name: character_rapier_39
       rect:
         serializedVersion: 2
-        x: 213
-        y: 1729
-        width: 27
-        height: 50
+        x: 192
+        y: 1728
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -803,10 +828,10 @@ TextureImporter:
       name: character_rapier_40
       rect:
         serializedVersion: 2
-        x: 270
-        y: 1729
-        width: 29
-        height: 50
+        x: 256
+        y: 1728
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -816,10 +841,10 @@ TextureImporter:
       name: character_rapier_41
       rect:
         serializedVersion: 2
-        x: 331
-        y: 1729
-        width: 33
-        height: 50
+        x: 320
+        y: 1728
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -829,10 +854,10 @@ TextureImporter:
       name: character_rapier_42
       rect:
         serializedVersion: 2
-        x: 398
-        y: 1729
-        width: 30
-        height: 50
+        x: 384
+        y: 1728
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -842,10 +867,10 @@ TextureImporter:
       name: character_rapier_43
       rect:
         serializedVersion: 2
-        x: 469
-        y: 1729
-        width: 27
-        height: 50
+        x: 448
+        y: 1728
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -855,10 +880,10 @@ TextureImporter:
       name: character_rapier_44
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1665
-        width: 32
-        height: 51
+        x: 0
+        y: 1664
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -868,10 +893,10 @@ TextureImporter:
       name: character_rapier_45
       rect:
         serializedVersion: 2
-        x: 82
-        y: 1666
-        width: 27
-        height: 50
+        x: 64
+        y: 1664
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -881,10 +906,10 @@ TextureImporter:
       name: character_rapier_46
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1666
-        width: 24
-        height: 50
+        x: 128
+        y: 1664
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -894,10 +919,10 @@ TextureImporter:
       name: character_rapier_47
       rect:
         serializedVersion: 2
-        x: 209
-        y: 1666
-        width: 27
-        height: 50
+        x: 192
+        y: 1664
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -907,10 +932,10 @@ TextureImporter:
       name: character_rapier_48
       rect:
         serializedVersion: 2
-        x: 276
-        y: 1666
-        width: 24
-        height: 49
+        x: 256
+        y: 1664
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -920,10 +945,10 @@ TextureImporter:
       name: character_rapier_49
       rect:
         serializedVersion: 2
-        x: 340
-        y: 1666
-        width: 25
-        height: 49
+        x: 320
+        y: 1664
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -933,10 +958,10 @@ TextureImporter:
       name: character_rapier_50
       rect:
         serializedVersion: 2
-        x: 404
-        y: 1666
-        width: 25
-        height: 49
+        x: 384
+        y: 1664
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -946,10 +971,10 @@ TextureImporter:
       name: character_rapier_51
       rect:
         serializedVersion: 2
-        x: 465
-        y: 1666
-        width: 28
-        height: 50
+        x: 448
+        y: 1664
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -959,10 +984,10 @@ TextureImporter:
       name: character_rapier_52
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1601
-        width: 23
-        height: 51
+        x: 0
+        y: 1600
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -972,10 +997,10 @@ TextureImporter:
       name: character_rapier_53
       rect:
         serializedVersion: 2
-        x: 83
-        y: 1601
-        width: 27
-        height: 51
+        x: 64
+        y: 1600
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -985,10 +1010,10 @@ TextureImporter:
       name: character_rapier_54
       rect:
         serializedVersion: 2
-        x: 145
-        y: 1601
-        width: 29
-        height: 51
+        x: 128
+        y: 1600
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -998,10 +1023,10 @@ TextureImporter:
       name: character_rapier_55
       rect:
         serializedVersion: 2
-        x: 208
-        y: 1601
-        width: 27
-        height: 51
+        x: 192
+        y: 1600
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1011,10 +1036,10 @@ TextureImporter:
       name: character_rapier_56
       rect:
         serializedVersion: 2
-        x: 277
-        y: 1601
-        width: 29
-        height: 51
+        x: 256
+        y: 1600
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1024,10 +1049,10 @@ TextureImporter:
       name: character_rapier_57
       rect:
         serializedVersion: 2
-        x: 341
-        y: 1601
-        width: 32
-        height: 51
+        x: 320
+        y: 1600
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1037,10 +1062,10 @@ TextureImporter:
       name: character_rapier_58
       rect:
         serializedVersion: 2
-        x: 405
-        y: 1601
-        width: 29
-        height: 51
+        x: 384
+        y: 1600
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1050,10 +1075,10 @@ TextureImporter:
       name: character_rapier_59
       rect:
         serializedVersion: 2
-        x: 464
-        y: 1601
-        width: 28
-        height: 51
+        x: 448
+        y: 1600
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1063,10 +1088,10 @@ TextureImporter:
       name: character_rapier_60
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1538
-        width: 32
-        height: 51
+        x: 0
+        y: 1536
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1076,10 +1101,10 @@ TextureImporter:
       name: character_rapier_61
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1538
-        width: 32
-        height: 51
+        x: 64
+        y: 1536
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1089,10 +1114,10 @@ TextureImporter:
       name: character_rapier_62
       rect:
         serializedVersion: 2
-        x: 144
-        y: 1537
-        width: 32
-        height: 52
+        x: 128
+        y: 1536
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1102,10 +1127,10 @@ TextureImporter:
       name: character_rapier_63
       rect:
         serializedVersion: 2
-        x: 208
+        x: 192
         y: 1536
-        width: 31
-        height: 52
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1115,10 +1140,10 @@ TextureImporter:
       name: character_rapier_64
       rect:
         serializedVersion: 2
-        x: 272
-        y: 1537
-        width: 32
-        height: 52
+        x: 256
+        y: 1536
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1128,10 +1153,10 @@ TextureImporter:
       name: character_rapier_65
       rect:
         serializedVersion: 2
-        x: 336
-        y: 1538
-        width: 32
-        height: 51
+        x: 320
+        y: 1536
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1141,10 +1166,10 @@ TextureImporter:
       name: character_rapier_66
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1537
-        width: 32
-        height: 52
+        x: 384
+        y: 1536
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1154,10 +1179,10 @@ TextureImporter:
       name: character_rapier_67
       rect:
         serializedVersion: 2
-        x: 465
+        x: 448
         y: 1536
-        width: 31
-        height: 52
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1167,10 +1192,10 @@ TextureImporter:
       name: character_rapier_68
       rect:
         serializedVersion: 2
-        x: 528
-        y: 1537
-        width: 33
-        height: 52
+        x: 512
+        y: 1536
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1180,10 +1205,10 @@ TextureImporter:
       name: character_rapier_69
       rect:
         serializedVersion: 2
-        x: 21
-        y: 1473
-        width: 23
-        height: 51
+        x: 0
+        y: 1472
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1193,10 +1218,10 @@ TextureImporter:
       name: character_rapier_70
       rect:
         serializedVersion: 2
-        x: 82
-        y: 1473
-        width: 27
-        height: 50
+        x: 64
+        y: 1472
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1206,10 +1231,10 @@ TextureImporter:
       name: character_rapier_71
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1474
-        width: 24
-        height: 50
+        x: 128
+        y: 1472
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1219,10 +1244,10 @@ TextureImporter:
       name: character_rapier_72
       rect:
         serializedVersion: 2
-        x: 213
-        y: 1474
-        width: 25
-        height: 50
+        x: 192
+        y: 1472
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1232,10 +1257,10 @@ TextureImporter:
       name: character_rapier_73
       rect:
         serializedVersion: 2
-        x: 277
-        y: 1473
-        width: 26
-        height: 51
+        x: 256
+        y: 1472
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1245,10 +1270,10 @@ TextureImporter:
       name: character_rapier_74
       rect:
         serializedVersion: 2
-        x: 339
-        y: 1473
-        width: 30
-        height: 50
+        x: 320
+        y: 1472
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1258,10 +1283,10 @@ TextureImporter:
       name: character_rapier_75
       rect:
         serializedVersion: 2
-        x: 405
-        y: 1473
-        width: 26
-        height: 51
+        x: 384
+        y: 1472
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1271,10 +1296,10 @@ TextureImporter:
       name: character_rapier_76
       rect:
         serializedVersion: 2
-        x: 469
-        y: 1473
-        width: 26
-        height: 51
+        x: 448
+        y: 1472
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1284,10 +1309,10 @@ TextureImporter:
       name: character_rapier_77
       rect:
         serializedVersion: 2
-        x: 533
-        y: 1473
-        width: 25
-        height: 51
+        x: 512
+        y: 1472
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1297,10 +1322,10 @@ TextureImporter:
       name: character_rapier_78
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1409
-        width: 32
-        height: 51
+        x: 0
+        y: 1408
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1310,10 +1335,10 @@ TextureImporter:
       name: character_rapier_79
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1409
-        width: 32
-        height: 51
+        x: 64
+        y: 1408
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1323,10 +1348,10 @@ TextureImporter:
       name: character_rapier_80
       rect:
         serializedVersion: 2
-        x: 144
+        x: 128
         y: 1408
-        width: 32
-        height: 52
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1336,10 +1361,10 @@ TextureImporter:
       name: character_rapier_81
       rect:
         serializedVersion: 2
-        x: 209
+        x: 192
         y: 1408
-        width: 31
-        height: 51
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1349,10 +1374,10 @@ TextureImporter:
       name: character_rapier_82
       rect:
         serializedVersion: 2
-        x: 272
+        x: 256
         y: 1408
-        width: 32
-        height: 52
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1362,10 +1387,10 @@ TextureImporter:
       name: character_rapier_83
       rect:
         serializedVersion: 2
-        x: 336
-        y: 1409
-        width: 32
-        height: 51
+        x: 320
+        y: 1408
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1375,10 +1400,10 @@ TextureImporter:
       name: character_rapier_84
       rect:
         serializedVersion: 2
-        x: 400
+        x: 384
         y: 1408
-        width: 32
-        height: 52
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1388,10 +1413,10 @@ TextureImporter:
       name: character_rapier_85
       rect:
         serializedVersion: 2
-        x: 464
+        x: 448
         y: 1408
-        width: 31
-        height: 51
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1401,10 +1426,10 @@ TextureImporter:
       name: character_rapier_86
       rect:
         serializedVersion: 2
-        x: 528
+        x: 512
         y: 1408
-        width: 33
-        height: 52
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1414,10 +1439,10 @@ TextureImporter:
       name: character_rapier_87
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1345
-        width: 23
-        height: 50
+        x: 0
+        y: 1344
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1427,10 +1452,10 @@ TextureImporter:
       name: character_rapier_88
       rect:
         serializedVersion: 2
-        x: 83
-        y: 1345
-        width: 27
-        height: 49
+        x: 64
+        y: 1344
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1440,10 +1465,10 @@ TextureImporter:
       name: character_rapier_89
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1346
-        width: 24
-        height: 49
+        x: 128
+        y: 1344
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1453,10 +1478,10 @@ TextureImporter:
       name: character_rapier_90
       rect:
         serializedVersion: 2
-        x: 210
-        y: 1346
-        width: 25
-        height: 49
+        x: 192
+        y: 1344
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1466,10 +1491,10 @@ TextureImporter:
       name: character_rapier_91
       rect:
         serializedVersion: 2
-        x: 273
-        y: 1345
-        width: 26
-        height: 50
+        x: 256
+        y: 1344
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1479,10 +1504,10 @@ TextureImporter:
       name: character_rapier_92
       rect:
         serializedVersion: 2
-        x: 335
-        y: 1345
-        width: 30
-        height: 49
+        x: 320
+        y: 1344
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1492,10 +1517,10 @@ TextureImporter:
       name: character_rapier_93
       rect:
         serializedVersion: 2
-        x: 401
-        y: 1345
-        width: 27
-        height: 50
+        x: 384
+        y: 1344
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1505,10 +1530,10 @@ TextureImporter:
       name: character_rapier_94
       rect:
         serializedVersion: 2
-        x: 466
-        y: 1345
-        width: 26
-        height: 50
+        x: 448
+        y: 1344
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1518,10 +1543,10 @@ TextureImporter:
       name: character_rapier_95
       rect:
         serializedVersion: 2
-        x: 531
-        y: 1345
-        width: 24
-        height: 50
+        x: 512
+        y: 1344
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1531,10 +1556,10 @@ TextureImporter:
       name: character_rapier_96
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1281
-        width: 32
-        height: 50
+        x: 0
+        y: 1280
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1544,10 +1569,10 @@ TextureImporter:
       name: character_rapier_97
       rect:
         serializedVersion: 2
-        x: 82
+        x: 64
         y: 1280
-        width: 28
-        height: 50
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1557,10 +1582,10 @@ TextureImporter:
       name: character_rapier_98
       rect:
         serializedVersion: 2
-        x: 146
+        x: 128
         y: 1280
-        width: 28
-        height: 50
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1570,10 +1595,10 @@ TextureImporter:
       name: character_rapier_99
       rect:
         serializedVersion: 2
-        x: 210
+        x: 192
         y: 1280
-        width: 30
-        height: 51
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1583,10 +1608,10 @@ TextureImporter:
       name: character_rapier_100
       rect:
         serializedVersion: 2
-        x: 273
+        x: 256
         y: 1280
-        width: 38
-        height: 51
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1596,10 +1621,10 @@ TextureImporter:
       name: character_rapier_101
       rect:
         serializedVersion: 2
-        x: 337
+        x: 320
         y: 1280
-        width: 41
-        height: 51
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1609,10 +1634,10 @@ TextureImporter:
       name: character_rapier_102
       rect:
         serializedVersion: 2
-        x: 21
+        x: 0
         y: 1216
-        width: 23
-        height: 51
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1622,10 +1647,10 @@ TextureImporter:
       name: character_rapier_103
       rect:
         serializedVersion: 2
-        x: 80
+        x: 64
         y: 1216
-        width: 27
-        height: 49
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1635,10 +1660,10 @@ TextureImporter:
       name: character_rapier_104
       rect:
         serializedVersion: 2
-        x: 147
+        x: 128
         y: 1216
-        width: 26
-        height: 51
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1648,10 +1673,10 @@ TextureImporter:
       name: character_rapier_105
       rect:
         serializedVersion: 2
-        x: 202
+        x: 192
         y: 1216
-        width: 36
-        height: 51
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1661,10 +1686,10 @@ TextureImporter:
       name: character_rapier_106
       rect:
         serializedVersion: 2
-        x: 263
+        x: 256
         y: 1216
-        width: 38
-        height: 51
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1674,10 +1699,10 @@ TextureImporter:
       name: character_rapier_107
       rect:
         serializedVersion: 2
-        x: 330
+        x: 320
         y: 1216
-        width: 35
-        height: 51
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1687,10 +1712,10 @@ TextureImporter:
       name: character_rapier_108
       rect:
         serializedVersion: 2
-        x: 16
+        x: 0
         y: 1152
-        width: 32
-        height: 52
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1700,10 +1725,10 @@ TextureImporter:
       name: character_rapier_109
       rect:
         serializedVersion: 2
-        x: 82
+        x: 64
         y: 1152
-        width: 28
-        height: 52
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1713,10 +1738,10 @@ TextureImporter:
       name: character_rapier_110
       rect:
         serializedVersion: 2
-        x: 145
+        x: 128
         y: 1152
-        width: 29
-        height: 50
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1726,10 +1751,10 @@ TextureImporter:
       name: character_rapier_111
       rect:
         serializedVersion: 2
-        x: 211
+        x: 192
         y: 1152
-        width: 29
-        height: 51
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1739,10 +1764,10 @@ TextureImporter:
       name: character_rapier_112
       rect:
         serializedVersion: 2
-        x: 275
+        x: 256
         y: 1152
-        width: 37
-        height: 52
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1752,10 +1777,10 @@ TextureImporter:
       name: character_rapier_113
       rect:
         serializedVersion: 2
-        x: 338
+        x: 320
         y: 1152
-        width: 41
-        height: 52
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1765,10 +1790,10 @@ TextureImporter:
       name: character_rapier_114
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1089
-        width: 23
-        height: 50
+        x: 0
+        y: 1088
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1778,10 +1803,10 @@ TextureImporter:
       name: character_rapier_115
       rect:
         serializedVersion: 2
-        x: 85
-        y: 1089
-        width: 27
-        height: 48
+        x: 64
+        y: 1088
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1791,10 +1816,10 @@ TextureImporter:
       name: character_rapier_116
       rect:
         serializedVersion: 2
-        x: 147
-        y: 1089
-        width: 26
-        height: 50
+        x: 128
+        y: 1088
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1804,10 +1829,10 @@ TextureImporter:
       name: character_rapier_117
       rect:
         serializedVersion: 2
-        x: 210
-        y: 1089
-        width: 36
-        height: 50
+        x: 192
+        y: 1088
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1817,10 +1842,10 @@ TextureImporter:
       name: character_rapier_118
       rect:
         serializedVersion: 2
-        x: 275
-        y: 1089
-        width: 38
-        height: 50
+        x: 256
+        y: 1088
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1830,10 +1855,10 @@ TextureImporter:
       name: character_rapier_119
       rect:
         serializedVersion: 2
-        x: 339
-        y: 1089
-        width: 35
-        height: 50
+        x: 320
+        y: 1088
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1843,10 +1868,10 @@ TextureImporter:
       name: character_rapier_120
       rect:
         serializedVersion: 2
-        x: 15
-        y: 1025
-        width: 32
-        height: 50
+        x: 0
+        y: 1024
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1856,10 +1881,10 @@ TextureImporter:
       name: character_rapier_121
       rect:
         serializedVersion: 2
-        x: 81
-        y: 1023
-        width: 29
-        height: 51
+        x: 64
+        y: 1024
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1869,10 +1894,10 @@ TextureImporter:
       name: character_rapier_122
       rect:
         serializedVersion: 2
-        x: 148
-        y: 1023
-        width: 24
-        height: 52
+        x: 128
+        y: 1024
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1882,10 +1907,10 @@ TextureImporter:
       name: character_rapier_123
       rect:
         serializedVersion: 2
-        x: 211
-        y: 1023
-        width: 24
-        height: 52
+        x: 192
+        y: 1024
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1895,10 +1920,10 @@ TextureImporter:
       name: character_rapier_124
       rect:
         serializedVersion: 2
-        x: 275
-        y: 1023
-        width: 29
-        height: 52
+        x: 256
+        y: 1024
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1908,10 +1933,10 @@ TextureImporter:
       name: character_rapier_125
       rect:
         serializedVersion: 2
-        x: 339
-        y: 1023
-        width: 27
-        height: 52
+        x: 320
+        y: 1024
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1921,10 +1946,10 @@ TextureImporter:
       name: character_rapier_126
       rect:
         serializedVersion: 2
-        x: 403
-        y: 1023
-        width: 28
-        height: 52
+        x: 384
+        y: 1024
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1934,10 +1959,10 @@ TextureImporter:
       name: character_rapier_127
       rect:
         serializedVersion: 2
-        x: 467
-        y: 1023
-        width: 29
-        height: 52
+        x: 448
+        y: 1024
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1947,10 +1972,10 @@ TextureImporter:
       name: character_rapier_128
       rect:
         serializedVersion: 2
-        x: 531
-        y: 1023
-        width: 30
-        height: 52
+        x: 512
+        y: 1024
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1960,10 +1985,10 @@ TextureImporter:
       name: character_rapier_129
       rect:
         serializedVersion: 2
-        x: 595
-        y: 1023
-        width: 30
-        height: 52
+        x: 576
+        y: 1024
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1973,10 +1998,10 @@ TextureImporter:
       name: character_rapier_130
       rect:
         serializedVersion: 2
-        x: 659
-        y: 1023
-        width: 24
-        height: 52
+        x: 640
+        y: 1024
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1986,10 +2011,10 @@ TextureImporter:
       name: character_rapier_131
       rect:
         serializedVersion: 2
-        x: 723
-        y: 1023
-        width: 24
-        height: 52
+        x: 704
+        y: 1024
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1999,10 +2024,10 @@ TextureImporter:
       name: character_rapier_132
       rect:
         serializedVersion: 2
-        x: 787
-        y: 1023
-        width: 24
-        height: 52
+        x: 768
+        y: 1024
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2012,10 +2037,10 @@ TextureImporter:
       name: character_rapier_133
       rect:
         serializedVersion: 2
-        x: 22
-        y: 961
-        width: 23
-        height: 50
+        x: 0
+        y: 960
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2025,10 +2050,10 @@ TextureImporter:
       name: character_rapier_134
       rect:
         serializedVersion: 2
-        x: 83
-        y: 961
-        width: 27
-        height: 50
+        x: 64
+        y: 960
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2038,10 +2063,10 @@ TextureImporter:
       name: character_rapier_135
       rect:
         serializedVersion: 2
-        x: 142
-        y: 961
-        width: 34
-        height: 50
+        x: 128
+        y: 960
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2051,10 +2076,10 @@ TextureImporter:
       name: character_rapier_136
       rect:
         serializedVersion: 2
-        x: 204
-        y: 961
-        width: 37
-        height: 50
+        x: 192
+        y: 960
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2064,10 +2089,10 @@ TextureImporter:
       name: character_rapier_137
       rect:
         serializedVersion: 2
-        x: 268
-        y: 961
-        width: 37
-        height: 50
+        x: 256
+        y: 960
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2077,10 +2102,10 @@ TextureImporter:
       name: character_rapier_138
       rect:
         serializedVersion: 2
-        x: 331
-        y: 961
-        width: 34
-        height: 50
+        x: 320
+        y: 960
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2090,10 +2115,10 @@ TextureImporter:
       name: character_rapier_139
       rect:
         serializedVersion: 2
-        x: 395
-        y: 961
-        width: 36
-        height: 50
+        x: 384
+        y: 960
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2103,10 +2128,10 @@ TextureImporter:
       name: character_rapier_140
       rect:
         serializedVersion: 2
-        x: 460
-        y: 961
-        width: 38
-        height: 50
+        x: 448
+        y: 960
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2116,10 +2141,10 @@ TextureImporter:
       name: character_rapier_141
       rect:
         serializedVersion: 2
-        x: 524
-        y: 961
-        width: 40
-        height: 50
+        x: 512
+        y: 960
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2129,10 +2154,10 @@ TextureImporter:
       name: character_rapier_142
       rect:
         serializedVersion: 2
-        x: 588
-        y: 961
-        width: 38
-        height: 50
+        x: 576
+        y: 960
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2142,10 +2167,10 @@ TextureImporter:
       name: character_rapier_143
       rect:
         serializedVersion: 2
-        x: 651
-        y: 961
-        width: 38
-        height: 50
+        x: 640
+        y: 960
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2155,10 +2180,10 @@ TextureImporter:
       name: character_rapier_144
       rect:
         serializedVersion: 2
-        x: 715
-        y: 961
-        width: 34
-        height: 50
+        x: 704
+        y: 960
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2168,10 +2193,10 @@ TextureImporter:
       name: character_rapier_145
       rect:
         serializedVersion: 2
-        x: 779
-        y: 961
-        width: 37
-        height: 50
+        x: 768
+        y: 960
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2181,10 +2206,10 @@ TextureImporter:
       name: character_rapier_146
       rect:
         serializedVersion: 2
-        x: 15
-        y: 897
-        width: 32
-        height: 51
+        x: 0
+        y: 896
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2194,10 +2219,10 @@ TextureImporter:
       name: character_rapier_147
       rect:
         serializedVersion: 2
-        x: 81
-        y: 898
-        width: 27
-        height: 50
+        x: 64
+        y: 896
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2207,10 +2232,10 @@ TextureImporter:
       name: character_rapier_148
       rect:
         serializedVersion: 2
-        x: 145
-        y: 898
-        width: 27
-        height: 50
+        x: 128
+        y: 896
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2220,10 +2245,10 @@ TextureImporter:
       name: character_rapier_149
       rect:
         serializedVersion: 2
-        x: 209
-        y: 897
-        width: 26
-        height: 51
+        x: 192
+        y: 896
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2233,10 +2258,10 @@ TextureImporter:
       name: character_rapier_150
       rect:
         serializedVersion: 2
-        x: 274
-        y: 897
-        width: 25
-        height: 51
+        x: 256
+        y: 896
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2246,10 +2271,10 @@ TextureImporter:
       name: character_rapier_151
       rect:
         serializedVersion: 2
-        x: 338
-        y: 897
-        width: 26
-        height: 51
+        x: 320
+        y: 896
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2259,10 +2284,10 @@ TextureImporter:
       name: character_rapier_152
       rect:
         serializedVersion: 2
-        x: 402
-        y: 897
-        width: 26
-        height: 51
+        x: 384
+        y: 896
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2272,10 +2297,10 @@ TextureImporter:
       name: character_rapier_153
       rect:
         serializedVersion: 2
-        x: 465
-        y: 897
-        width: 27
-        height: 51
+        x: 448
+        y: 896
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2285,10 +2310,10 @@ TextureImporter:
       name: character_rapier_154
       rect:
         serializedVersion: 2
-        x: 529
-        y: 897
-        width: 26
-        height: 51
+        x: 512
+        y: 896
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2298,10 +2323,10 @@ TextureImporter:
       name: character_rapier_155
       rect:
         serializedVersion: 2
-        x: 594
-        y: 897
-        width: 25
-        height: 51
+        x: 576
+        y: 896
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2311,10 +2336,10 @@ TextureImporter:
       name: character_rapier_156
       rect:
         serializedVersion: 2
-        x: 657
-        y: 897
-        width: 26
-        height: 51
+        x: 640
+        y: 896
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2324,10 +2349,10 @@ TextureImporter:
       name: character_rapier_157
       rect:
         serializedVersion: 2
-        x: 723
-        y: 897
-        width: 24
-        height: 51
+        x: 704
+        y: 896
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2337,10 +2362,10 @@ TextureImporter:
       name: character_rapier_158
       rect:
         serializedVersion: 2
-        x: 785
-        y: 897
-        width: 26
-        height: 51
+        x: 768
+        y: 896
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2350,10 +2375,10 @@ TextureImporter:
       name: character_rapier_159
       rect:
         serializedVersion: 2
-        x: 19
-        y: 833
-        width: 23
-        height: 50
+        x: 0
+        y: 832
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2363,10 +2388,10 @@ TextureImporter:
       name: character_rapier_160
       rect:
         serializedVersion: 2
-        x: 82
-        y: 833
-        width: 27
-        height: 50
+        x: 64
+        y: 832
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2376,10 +2401,10 @@ TextureImporter:
       name: character_rapier_161
       rect:
         serializedVersion: 2
-        x: 144
-        y: 833
-        width: 34
-        height: 50
+        x: 128
+        y: 832
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2389,10 +2414,10 @@ TextureImporter:
       name: character_rapier_162
       rect:
         serializedVersion: 2
-        x: 207
-        y: 833
-        width: 37
-        height: 50
+        x: 192
+        y: 832
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2402,10 +2427,10 @@ TextureImporter:
       name: character_rapier_163
       rect:
         serializedVersion: 2
-        x: 271
-        y: 833
-        width: 37
-        height: 50
+        x: 256
+        y: 832
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2415,10 +2440,10 @@ TextureImporter:
       name: character_rapier_164
       rect:
         serializedVersion: 2
-        x: 339
-        y: 833
-        width: 34
-        height: 50
+        x: 320
+        y: 832
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2428,10 +2453,10 @@ TextureImporter:
       name: character_rapier_165
       rect:
         serializedVersion: 2
-        x: 401
-        y: 833
-        width: 36
-        height: 50
+        x: 384
+        y: 832
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2441,10 +2466,10 @@ TextureImporter:
       name: character_rapier_166
       rect:
         serializedVersion: 2
-        x: 462
-        y: 833
-        width: 38
-        height: 50
+        x: 448
+        y: 832
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2454,10 +2479,10 @@ TextureImporter:
       name: character_rapier_167
       rect:
         serializedVersion: 2
-        x: 524
-        y: 833
-        width: 40
-        height: 50
+        x: 512
+        y: 832
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2467,10 +2492,10 @@ TextureImporter:
       name: character_rapier_168
       rect:
         serializedVersion: 2
-        x: 591
-        y: 833
-        width: 37
-        height: 50
+        x: 576
+        y: 832
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2480,10 +2505,10 @@ TextureImporter:
       name: character_rapier_169
       rect:
         serializedVersion: 2
-        x: 656
-        y: 833
-        width: 36
-        height: 50
+        x: 640
+        y: 832
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2493,10 +2518,10 @@ TextureImporter:
       name: character_rapier_170
       rect:
         serializedVersion: 2
-        x: 723
-        y: 833
-        width: 34
-        height: 51
+        x: 704
+        y: 832
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2506,10 +2531,10 @@ TextureImporter:
       name: character_rapier_171
       rect:
         serializedVersion: 2
-        x: 784
-        y: 833
-        width: 37
-        height: 50
+        x: 768
+        y: 832
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2519,10 +2544,10 @@ TextureImporter:
       name: character_rapier_172
       rect:
         serializedVersion: 2
-        x: 16
-        y: 769
-        width: 32
-        height: 51
+        x: 0
+        y: 768
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2532,10 +2557,10 @@ TextureImporter:
       name: character_rapier_173
       rect:
         serializedVersion: 2
-        x: 81
-        y: 769
-        width: 33
-        height: 50
+        x: 64
+        y: 768
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2545,10 +2570,10 @@ TextureImporter:
       name: character_rapier_174
       rect:
         serializedVersion: 2
-        x: 146
-        y: 769
-        width: 32
-        height: 43
+        x: 128
+        y: 768
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2558,10 +2583,10 @@ TextureImporter:
       name: character_rapier_175
       rect:
         serializedVersion: 2
-        x: 210
-        y: 770
-        width: 32
-        height: 38
+        x: 192
+        y: 768
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2571,10 +2596,10 @@ TextureImporter:
       name: character_rapier_176
       rect:
         serializedVersion: 2
-        x: 273
-        y: 770
-        width: 34
-        height: 31
+        x: 256
+        y: 768
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2584,10 +2609,10 @@ TextureImporter:
       name: character_rapier_177
       rect:
         serializedVersion: 2
-        x: 337
-        y: 767
-        width: 36
-        height: 38
+        x: 320
+        y: 768
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2597,10 +2622,10 @@ TextureImporter:
       name: character_rapier_178
       rect:
         serializedVersion: 2
-        x: 72
-        y: 641
-        width: 40
-        height: 50
+        x: 320
+        y: 704
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2610,10 +2635,10 @@ TextureImporter:
       name: character_rapier_179
       rect:
         serializedVersion: 2
-        x: 255
-        y: 640
-        width: 47
-        height: 50
+        x: 832
+        y: 704
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2623,10 +2648,10 @@ TextureImporter:
       name: character_rapier_180
       rect:
         serializedVersion: 2
-        x: 449
-        y: 640
-        width: 46
-        height: 50
+        x: 896
+        y: 704
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2636,10 +2661,10 @@ TextureImporter:
       name: character_rapier_181
       rect:
         serializedVersion: 2
-        x: 628
-        y: 640
-        width: 61
-        height: 51
+        x: 1024
+        y: 704
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2649,10 +2674,10 @@ TextureImporter:
       name: character_rapier_182
       rect:
         serializedVersion: 2
-        x: 820
+        x: 64
         y: 640
-        width: 83
-        height: 69
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2662,10 +2687,10 @@ TextureImporter:
       name: character_rapier_183
       rect:
         serializedVersion: 2
-        x: 1041
+        x: 192
         y: 640
-        width: 80
-        height: 66
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2675,10 +2700,10 @@ TextureImporter:
       name: character_rapier_184
       rect:
         serializedVersion: 2
-        x: 56
-        y: 449
-        width: 52
-        height: 51
+        x: 256
+        y: 640
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2688,10 +2713,10 @@ TextureImporter:
       name: character_rapier_185
       rect:
         serializedVersion: 2
-        x: 271
-        y: 449
-        width: 28
-        height: 49
+        x: 448
+        y: 640
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2701,10 +2726,10 @@ TextureImporter:
       name: character_rapier_186
       rect:
         serializedVersion: 2
-        x: 466
-        y: 449
-        width: 40
-        height: 51
+        x: 576
+        y: 640
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2714,10 +2739,10 @@ TextureImporter:
       name: character_rapier_187
       rect:
         serializedVersion: 2
-        x: 648
-        y: 449
-        width: 49
-        height: 51
+        x: 640
+        y: 640
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2727,10 +2752,10 @@ TextureImporter:
       name: character_rapier_188
       rect:
         serializedVersion: 2
-        x: 781
-        y: 449
-        width: 106
-        height: 51
+        x: 768
+        y: 640
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2740,10 +2765,10 @@ TextureImporter:
       name: character_rapier_189
       rect:
         serializedVersion: 2
-        x: 998
-        y: 449
-        width: 71
-        height: 51
+        x: 832
+        y: 640
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2753,10 +2778,10 @@ TextureImporter:
       name: character_rapier_190
       rect:
         serializedVersion: 2
-        x: 74
-        y: 256
-        width: 38
-        height: 52
+        x: 896
+        y: 640
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2766,10 +2791,10 @@ TextureImporter:
       name: character_rapier_191
       rect:
         serializedVersion: 2
-        x: 253
-        y: 257
-        width: 49
-        height: 51
+        x: 1024
+        y: 640
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2779,10 +2804,10 @@ TextureImporter:
       name: character_rapier_192
       rect:
         serializedVersion: 2
-        x: 449
-        y: 257
-        width: 46
-        height: 49
+        x: 1088
+        y: 640
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2792,10 +2817,10 @@ TextureImporter:
       name: character_rapier_193
       rect:
         serializedVersion: 2
-        x: 637
-        y: 257
-        width: 52
-        height: 50
+        x: 0
+        y: 448
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2805,10 +2830,10 @@ TextureImporter:
       name: character_rapier_194
       rect:
         serializedVersion: 2
-        x: 820
-        y: 238
-        width: 83
-        height: 70
+        x: 64
+        y: 448
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2818,10 +2843,10 @@ TextureImporter:
       name: character_rapier_195
       rect:
         serializedVersion: 2
-        x: 1041
-        y: 241
-        width: 80
-        height: 67
+        x: 256
+        y: 448
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2831,10 +2856,10 @@ TextureImporter:
       name: character_rapier_196
       rect:
         serializedVersion: 2
-        x: 84
-        y: 64
-        width: 52
-        height: 51
+        x: 448
+        y: 448
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2844,10 +2869,10 @@ TextureImporter:
       name: character_rapier_197
       rect:
         serializedVersion: 2
-        x: 277
-        y: 64
-        width: 28
-        height: 49
+        x: 640
+        y: 448
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2857,10 +2882,10 @@ TextureImporter:
       name: character_rapier_198
       rect:
         serializedVersion: 2
-        x: 453
-        y: 64
-        width: 42
-        height: 51
+        x: 768
+        y: 448
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2870,10 +2895,10 @@ TextureImporter:
       name: character_rapier_199
       rect:
         serializedVersion: 2
-        x: 647
-        y: 64
-        width: 48
-        height: 51
+        x: 832
+        y: 448
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2883,10 +2908,10 @@ TextureImporter:
       name: character_rapier_200
       rect:
         serializedVersion: 2
-        x: 842
-        y: 64
-        width: 104
-        height: 51
+        x: 960
+        y: 448
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2896,10 +2921,335 @@ TextureImporter:
       name: character_rapier_201
       rect:
         serializedVersion: 2
-        x: 1042
+        x: 1024
+        y: 448
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_202
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_203
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_204
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_205
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_206
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 256
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_207
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_208
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_209
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 256
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_210
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 256
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_211
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_212
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 256
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_213
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_214
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 192
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_215
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 192
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_216
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 192
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_217
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 192
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_218
+      rect:
+        serializedVersion: 2
+        x: 64
         y: 64
-        width: 73
-        height: 51
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_219
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_220
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_221
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_222
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_223
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_224
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_225
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 64
+        width: 64
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: character_rapier_226
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 64
+        width: 64
+        height: 64
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
