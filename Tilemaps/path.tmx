@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="26" height="18" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="trunk" tilewidth="32" tileheight="32" tilecount="18" columns="6">
+  <image source="../Tiles/trunk.png" width="192" height="96"/>
+ </tileset>
+ <tileset firstgid="19" name="treetop" tilewidth="32" tileheight="32" tilecount="42" columns="6">
+  <image source="../Tiles/treetop.png" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="61" name="rock" tilewidth="32" tileheight="32" tilecount="2" columns="2">
+  <image source="../Tiles/rock.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="63" name="grass" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/grass.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="81" name="dirt" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/dirt.png" width="96" height="192"/>
+  <terraintypes>
+   <terrain name="dirt" tile="-1"/>
+  </terraintypes>
+  <tile id="1" terrain="0,0,0,"/>
+  <tile id="2" terrain="0,0,,0"/>
+  <tile id="4" terrain="0,,0,0"/>
+  <tile id="5" terrain=",0,0,0"/>
+  <tile id="6" terrain=",,,0"/>
+  <tile id="7" terrain=",,0,0"/>
+  <tile id="8" terrain=",,0,"/>
+  <tile id="9" terrain=",0,,0"/>
+  <tile id="10" terrain="0,0,0,0"/>
+  <tile id="11" terrain="0,,0,"/>
+  <tile id="12" terrain=",0,,"/>
+  <tile id="13" terrain="0,0,,"/>
+  <tile id="14" terrain="0,,,"/>
+ </tileset>
+ <tileset firstgid="99" name="red" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="../Tiles/red.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="100" name="barrel" tilewidth="32" tileheight="32" tilecount="8" columns="4">
+  <image source="../Tiles/barrel.png" width="128" height="64"/>
+ </tileset>
+ <tileset firstgid="108" name="bat" tilewidth="32" tileheight="32" tilecount="12" columns="3">
+  <image source="../Tiles/bat.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="120" name="bee" tilewidth="32" tileheight="32" tilecount="12" columns="3">
+  <image source="../Tiles/bee.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="132" name="big_worm" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/big_worm.png" width="105" height="200"/>
+ </tileset>
+ <tileset firstgid="150" name="brackish" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/brackish.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="168" name="bridges" tilewidth="32" tileheight="32" tilecount="42" columns="6">
+  <image source="../Tiles/bridges.png" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="210" name="buckets" tilewidth="32" tileheight="32" tilecount="6" columns="3">
+  <image source="../Tiles/buckets.png" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="216" name="cabinets" tilewidth="32" tileheight="32" tilecount="78" columns="6">
+  <image source="../Tiles/cabinets.png" width="192" height="416"/>
+ </tileset>
+ <tileset firstgid="294" name="castle_lightsources" tilewidth="32" tileheight="32" tilecount="20" columns="5">
+  <image source="../Tiles/castle_lightsources.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="314" name="castle_outside" tilewidth="32" tileheight="32" tilecount="187" columns="17">
+  <image source="../Tiles/castle_outside.png" width="544" height="352"/>
+ </tileset>
+ <tileset firstgid="501" name="castlefloors_outside" tilewidth="32" tileheight="32" tilecount="20" columns="4">
+  <image source="../Tiles/castlefloors_outside.png" width="128" height="160"/>
+ </tileset>
+ <tileset firstgid="521" name="castlefloors" tilewidth="32" tileheight="32" tilecount="100" columns="10">
+  <image source="../Tiles/castlefloors.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="621" name="castlewalls" tilewidth="32" tileheight="32" tilecount="180" columns="12">
+  <image source="../Tiles/castlewalls.png" width="384" height="480"/>
+ </tileset>
+ <tileset firstgid="801" name="cement" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/cement.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="819" name="cementstair" tilewidth="32" tileheight="32" tilecount="20" columns="5">
+  <image source="../Tiles/cementstair.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="839" name="chests" tilewidth="32" tileheight="32" tilecount="6" columns="2">
+  <image source="../Tiles/chests.png" width="64" height="96"/>
+ </tileset>
+ <tileset firstgid="845" name="country" tilewidth="32" tileheight="32" tilecount="20" columns="5">
+  <image source="../Tiles/country.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="865" name="cup" tilewidth="32" tileheight="32" tilecount="2" columns="1">
+  <image source="../Tiles/cup.png" width="32" height="64"/>
+ </tileset>
+ <tileset firstgid="867" name="dirt2" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/dirt2.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="885" name="dungeon" tilewidth="32" tileheight="32" tilecount="104" columns="13">
+  <image source="../Tiles/dungeon.png" width="416" height="256"/>
+ </tileset>
+ <tileset firstgid="989" name="eyeball" tilewidth="32" tileheight="32" tilecount="12" columns="3">
+  <image source="../Tiles/eyeball.png" width="96" height="152"/>
+ </tileset>
+ <tileset firstgid="1001" name="ghost" tilewidth="32" tileheight="32" tilecount="15" columns="3">
+  <image source="../Tiles/ghost.png" width="120" height="184"/>
+ </tileset>
+ <tileset firstgid="1016" name="grassalt" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/grassalt.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="1034" name="hole" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/hole.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="1052" name="holek" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/holek.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="1070" name="holemid" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/holemid.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="1088" name="house" tilewidth="32" tileheight="32" tilecount="63" columns="9">
+  <image source="../Tiles/house.png" width="288" height="224"/>
+ </tileset>
+ <tileset firstgid="1151" name="inside" tilewidth="32" tileheight="32" tilecount="100" columns="10">
+  <image source="../Tiles/inside.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="1251" name="kitchen" tilewidth="32" tileheight="32" tilecount="8" columns="2">
+  <image source="../Tiles/kitchen.png" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="1259" name="lava" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/lava.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="1277" name="lavarock" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/lavarock.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="1295" name="man_eater_flower" tilewidth="32" tileheight="32" tilecount="45" columns="5">
+  <image source="../Tiles/man_eater_flower.png" width="180" height="304"/>
+ </tileset>
+ <tileset firstgid="1340" name="mountains" tilewidth="32" tileheight="32" tilecount="108" columns="12">
+  <image source="../Tiles/mountains.png" width="384" height="288"/>
+ </tileset>
+ <tileset firstgid="1448" name="pumpking" tilewidth="32" tileheight="32" tilecount="20" columns="4">
+  <image source="../Tiles/pumpking.png" width="138" height="184"/>
+ </tileset>
+ <tileset firstgid="1468" name="shadow" tilewidth="32" tileheight="32" tilecount="10" columns="5">
+  <image source="../Tiles/shadow.png" width="160" height="64"/>
+ </tileset>
+ <tileset firstgid="1478" name="signs" tilewidth="32" tileheight="32" tilecount="6" columns="3">
+  <image source="../Tiles/signs.png" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="1484" name="slime" tilewidth="32" tileheight="32" tilecount="12" columns="3">
+  <image source="../Tiles/slime.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="1496" name="small_worm" tilewidth="32" tileheight="32" tilecount="12" columns="3">
+  <image source="../Tiles/small_worm.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="1508" name="snake" tilewidth="32" tileheight="32" tilecount="12" columns="3">
+  <image source="../Tiles/snake.png" width="96" height="128"/>
+ </tileset>
+ <tileset firstgid="1520" name="stairs" tilewidth="32" tileheight="32" tilecount="112" columns="8">
+  <image source="../Tiles/stairs.png" width="256" height="448"/>
+ </tileset>
+ <tileset firstgid="1632" name="victoria" tilewidth="32" tileheight="32" tilecount="55" columns="11">
+  <image source="../Tiles/victoria.png" width="352" height="160"/>
+ </tileset>
+ <tileset firstgid="1687" name="water" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/water.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="1705" name="waterfall" tilewidth="32" tileheight="32" tilecount="15" columns="3">
+  <image source="../Tiles/waterfall.png" width="96" height="160"/>
+ </tileset>
+ <tileset firstgid="1720" name="watergrass" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Tiles/watergrass.png" width="96" height="192"/>
+ </tileset>
+ <layer name="Grass" width="26" height="18">
+  <data encoding="csv">
+73,80,73,73,73,73,73,73,73,73,73,73,78,73,73,73,73,73,73,73,73,73,73,73,73,73,
+79,79,80,73,73,73,73,73,73,73,73,73,73,79,79,80,73,73,73,73,73,73,73,73,73,73,
+78,79,79,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,
+80,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,
+80,78,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,
+78,73,73,73,73,73,73,73,79,80,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,
+73,73,73,73,73,73,73,80,79,79,80,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,
+73,73,73,73,73,73,79,78,78,79,80,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,
+73,73,73,73,73,73,79,78,80,78,78,73,73,73,73,73,80,80,78,80,80,80,79,73,73,73,
+73,73,73,73,73,73,79,80,78,78,73,73,73,73,73,73,79,79,80,80,79,79,79,73,73,73,
+73,73,73,80,80,73,73,73,73,73,73,73,73,73,73,73,73,73,80,78,80,78,78,79,73,73,
+73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,79,79,78,79,79,73,
+73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,
+73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,
+73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,
+73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,79,73,73,73,73,73,73,73,
+73,73,73,73,73,73,80,78,78,79,73,73,73,73,73,73,78,79,79,80,80,73,73,73,73,73,
+73,73,73,73,73,73,80,80,79,78,78,73,73,73,73,73,73,80,80,78,78,78,73,73,73,73
+</data>
+ </layer>
+ <layer name="Path" width="26" height="18">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,90,91,85,89,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,90,91,91,85,89,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,93,83,91,91,85,88,88,88,88,88,88,88,88,88,89,0,0,0,
+0,0,0,0,0,0,0,0,0,93,94,83,91,91,91,91,91,91,91,91,91,91,85,88,88,89,
+0,0,0,0,0,0,0,0,0,0,0,93,94,83,91,82,94,94,94,94,83,91,91,91,91,85,
+0,0,0,0,0,0,0,0,0,0,0,0,0,90,91,92,0,0,0,0,93,94,94,83,91,91,
+0,0,0,0,0,0,0,0,0,0,0,0,0,90,91,92,0,0,0,0,0,0,0,93,94,94,
+0,0,0,0,0,0,0,0,0,0,0,0,0,90,91,92,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,87,86,91,92,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,87,86,91,91,92,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,87,88,86,91,91,82,95,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,87,88,88,86,91,91,91,82,95,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,87,88,86,91,91,91,82,94,94,95,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,87,86,91,91,91,82,94,95,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,87,86,91,91,82,94,95,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,90,91,91,82,95,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,90,91,82,95,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,90,91,92,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Detail" width="26" height="18">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+62,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62,0,0,61,0,0,
+0,0,0,0,0,0,62,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,61,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62,0,0,0,0,0,0,0,0,0,0,
+0,0,62,0,0,0,0,0,0,61,0,0,62,0,0,0,0,0,61,0,0,0,0,0,0,0,
+0,0,0,0,0,0,62,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,62,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Tree Base" width="26" height="18">
+  <data encoding="csv">
+8,9,0,0,1,2,3,0,0,0,0,0,0,0,7,8,9,0,0,0,0,0,0,0,0,0,
+14,15,0,0,7,8,9,0,0,0,0,0,0,0,13,14,15,0,0,0,0,7,8,9,0,0,
+0,0,0,0,13,14,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,14,15,0,0,
+0,0,1,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,7,8,9,0,0,0,1,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,13,14,15,0,0,0,7,8,9,0,0,0,0,0,1,2,3,0,0,0,0,0,0,0,
+1,2,3,0,0,0,0,0,13,14,15,0,0,0,0,0,7,8,9,0,0,0,0,0,0,0,
+7,8,9,0,0,0,0,0,0,0,0,0,0,0,0,0,13,14,15,0,0,0,1,2,3,0,
+13,14,15,0,1,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,8,9,0,
+0,0,0,0,7,8,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,14,15,0,
+0,1,2,3,13,14,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,7,8,9,0,0,0,0,0,0,0,0,0,0,0,1,2,3,1,2,3,0,0,0,0,0,
+0,13,14,15,0,0,0,0,0,0,0,0,0,0,0,7,8,9,7,8,9,0,0,0,0,0,
+2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,13,14,15,13,14,15,0,0,0,0,0,
+8,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,0,0,0,0,
+14,15,0,0,0,0,0,0,0,0,0,0,0,1,2,3,0,0,0,7,8,9,1,2,3,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,7,8,9,0,0,0,13,14,15,7,8,9,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,13,14,15,0,0,0,0,0,0,13,14,15,0
+</data>
+ </layer>
+ <layer name="Monsters" width="26" height="18">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Tree Top" width="26" height="18">
+  <data encoding="csv">
+59,60,0,0,52,53,54,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,53,54,0,0,
+0,0,40,41,58,59,60,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,59,60,0,0,
+0,0,46,47,48,0,0,0,37,38,39,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,52,53,54,0,0,0,43,44,45,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,58,59,60,0,0,0,49,50,51,0,0,0,0,0,37,38,39,0,0,0,0,0,0,0,
+37,38,39,0,0,0,0,0,0,0,0,0,0,0,0,0,43,44,45,0,0,0,40,41,42,0,
+43,44,45,0,40,41,42,0,0,0,0,0,0,0,0,0,49,50,51,0,0,0,46,47,48,0,
+49,50,51,0,46,47,48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,53,54,0,
+0,37,38,39,52,53,54,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,59,60,0,
+0,43,44,45,58,59,60,0,0,0,0,0,0,0,0,40,41,42,0,0,0,0,0,0,0,0,
+0,49,50,51,0,0,0,0,0,0,0,0,0,0,0,46,47,48,37,38,39,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,53,54,43,44,45,0,0,0,0,0,
+38,39,0,0,0,0,0,0,0,0,0,0,0,0,0,58,59,60,49,50,51,0,0,0,0,0,
+44,45,0,0,0,0,0,0,0,0,0,0,0,37,38,39,0,0,0,37,38,39,37,38,39,0,
+50,51,0,0,0,0,0,0,0,0,0,0,0,43,44,45,0,0,0,43,44,45,43,44,45,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,49,50,51,0,0,0,49,50,51,49,50,51,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Collisions" width="26" height="18" opacity="0.25">
+  <data encoding="csv">
+99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,99,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,99,0,0,0,0,0,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,99,0,0,0,0,0,0,0,0,0,0,0,0,99,0,0,0,0,0,0,0,0,
+0,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,0,0,
+0,0,0,0,0,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,0,0,99,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,99,0,0,0,0,0,0,0,0,99,0,0,0,0,0,0,0,
+99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,0,0,0,0,0,99,0,0,99,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,99,0,0,0,0,0,0,0,0,99,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>
