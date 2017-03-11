@@ -22,8 +22,10 @@ public class CameraController : MonoBehaviour {
 	void Update () {
 		mainCamera.orthographicSize = Screen.height / 64f / cameraZoom;
 
-		Vector3 lerp = Vector2.Lerp (transform.position, targetPosition(), speed);
-		lerp.z = -10;
-		transform.position = lerp;
+		if (target) {
+			Vector3 lerp = Vector2.Lerp (transform.position, targetPosition(), speed);
+			lerp.z = -10;
+			transform.position = lerp;
+		}
 	}
 }
