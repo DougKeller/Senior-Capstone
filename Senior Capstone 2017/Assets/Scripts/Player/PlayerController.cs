@@ -1,14 +1,7 @@
-﻿using System;
-
-public abstract class PlayerController {
-	private Player _player;
+﻿public abstract class PlayerController : EntityController {
 	protected Player player {
-		get { return _player; }
+		get { return (Player) entity; }
 	}
 
-	public PlayerController (Player parent) {
-		_player = parent;
-	}
-
-	public abstract void Update ();
+  public PlayerController(Player parent) : base(parent) {}
 }

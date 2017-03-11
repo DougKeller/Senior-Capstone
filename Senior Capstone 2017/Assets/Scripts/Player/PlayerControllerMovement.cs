@@ -88,4 +88,6 @@ public class PlayerControllerMovement : PlayerController {
 		Vector2 newPosition = player.rigidBody.position + deltaMovement;
 		player.rigidBody.MovePosition (newPosition);
 	}
+
+  override public void OnCollisionEnter2D (Collision2D collision) {}
 }
