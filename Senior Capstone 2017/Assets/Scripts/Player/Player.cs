@@ -31,8 +31,6 @@ public class Player : MonoBehaviour {
 		controllers = new List<PlayerController> ();
 		controllers.Add (new PlayerControllerMovement (this));
 		controllers.Add (new PlayerControllerCombat (this));
-
-		Debug.Log (controllers);
 	}
 
 	void Update () {

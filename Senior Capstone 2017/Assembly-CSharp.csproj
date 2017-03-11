@@ -51,6 +51,10 @@
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerControllerCombat.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerControllerMovement.cs" />
+     <Compile Include="Assets\Scripts\Snake\Snake.cs" />
+     <Compile Include="Assets\Scripts\Snake\SnakeController.cs" />
+     <Compile Include="Assets\Scripts\Snake\SnakeControllerCombat.cs" />
+     <Compile Include="Assets\Scripts\Snake\SnakeControllerMovement.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GroupLayer.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\ImportBehaviour.cs" />
