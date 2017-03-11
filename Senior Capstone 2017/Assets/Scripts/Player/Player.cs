@@ -1,6 +1,6 @@
 ﻿public class Player : Entity {
-	void Start () {
-		AddController (new PlayerControllerMovement (this));
-		AddController (new PlayerControllerCombat (this));
-	}
+  protected override void InitializeControllers() {
+    controllers.Add (new PlayerControllerMovement (this));
+    controllers.Add (new PlayerControllerCombat (this));
+  }
 }

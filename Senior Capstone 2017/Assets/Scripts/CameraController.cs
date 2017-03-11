@@ -8,12 +8,10 @@ public class CameraController : MonoBehaviour {
 	public float speed;
 	public float cameraZoom;
 	Camera mainCamera;
-	int tilesPerColumn;
 
 	// Use this for initialization
 	void Start () {
 		mainCamera = GetComponent<Camera> ();
-		tilesPerColumn = 10;
 	}
 
 	Vector3 targetPosition () {

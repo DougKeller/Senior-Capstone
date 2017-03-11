@@ -7,7 +7,7 @@ public class Entity : MonoBehaviour {
   public Animator animator;
   public Rigidbody2D rigidBody;
 
-  private List<EntityController> controllers;
+  protected List<EntityController> controllers;
 
   public enum State {
     Idling, Walking, Dying
@@ -24,14 +24,13 @@ public class Entity : MonoBehaviour {
     }
   }
 
-  protected void AddController(EntityController controller) {
-    controllers.Add (controller);
-  }
+  protected virtual void InitializeControllers () {}
 
   void Start () {
     rigidBody.freezeRotation = true;
     currentState = State.Idling;
     controllers = new List<EntityController> ();
+    InitializeControllers ();
   }
 
   void Update () {
