@@ -16,7 +16,9 @@ public class SnakeControllerCombat : SnakeController {
 	}
 
 	override public void OnCollisionEnter2D(Collision2D collision) {
-		snake.currentState = Snake.State.Dying;
-		MonoBehaviour.Destroy (snake);
+		if (collision.gameObject.tag == "Player") {
+			snake.currentState = Snake.State.Dying;
+			MonoBehaviour.Destroy (snake.gameObject);
+		}
 	}
 }
