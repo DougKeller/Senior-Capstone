@@ -7,6 +7,7 @@ namespace Entities {
 
     public Animator animator;
     public Rigidbody2D rigidBody;
+	public Collider2D collider;
     protected List<EntityController> controllers;
     public Statistics stats;
 
@@ -24,6 +25,8 @@ namespace Entities {
         animator.SetInteger ("state", (int) _currentState);
       }
     }
+
+	public virtual float deathDuration { get { return 0f; } }
 
     protected abstract void InitializeControllers ();
 
@@ -51,8 +54,9 @@ namespace Entities {
 
     public void Die () {
       currentState = State.Dying;
-	  rigidBody.isKinematic = true;
-      Destroy (gameObject, 2);
+	  Destroy (rigidBody);
+	  Destroy (collider);
+	  Destroy (gameObject, deathDuration);
     }
   }
 }

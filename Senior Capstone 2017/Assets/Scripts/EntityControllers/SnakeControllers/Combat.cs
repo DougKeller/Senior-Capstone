@@ -3,14 +3,12 @@ using Entities;
 
 namespace EntityControllers.SnakeControllers {
 	public class Combat : EntityControllers.EntityController {
-		public int hitpoints;
-
 		public Combat (Snake snake) : base(snake) {
-			hitpoints = 20;
+			entity.stats.hitpoints = 20;
 		}
 
 		override public void Update () {
-			if (hitpoints <= 0) {
+			if (entity.stats.hitpoints <= 0) {
 				entity.Die ();
 			}
 		}
