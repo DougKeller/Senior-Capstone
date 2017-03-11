@@ -2,22 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovementController : MonoBehaviour {
-
-	Rigidbody2D rigidBody;
-	Animator animator;
+public class PlayerControllerMovement : PlayerController {
 	float baseSpeed;
 	float stamina;
 	float runMultiplier;
 	float runCost;
 	float runRegen;
 
-	// Use this for initialization
-	void Start () {
-		rigidBody = GetComponent<Rigidbody2D> ();
-		rigidBody.freezeRotation = true;
-		animator = GetComponent<Animator> ();
-
+	public PlayerControllerMovement(Player parent) : base(parent) {
 		baseSpeed = 3f;
 		runMultiplier = 2f;
 		stamina = 100f;
@@ -35,11 +27,11 @@ public class PlayerMovementController : MonoBehaviour {
 
 	void NotifyAnimator (Vector2 movement) {
 		if (movement != Vector2.zero) {
-			animator.SetBool ("isWalking", true);
-			animator.SetFloat ("inputX", movement.x);
-			animator.SetFloat ("inputY", movement.y);
+			player.currentState = Player.State.Walking;
+			player.animator.SetFloat ("inputX", movement.x);
+			player.animator.SetFloat ("inputY", movement.y);
 		} else {
-			animator.SetBool ("isWalking", false);
+			player.currentState = Player.State.Idling;
 		}
 	}
 
@@ -78,8 +70,11 @@ public class PlayerMovementController : MonoBehaviour {
 		}
 	}
 
-	// Update is called once per frame
-	void Update () {
+	override public void Update () {
+		if (player.currentState == Player.State.Dying) {
+			return;
+		}
+
 		Vector2 movement = GetMovementUnitVector ();
 		NotifyAnimator (movement);
 		if (movement == Vector2.zero) {
@@ -90,7 +85,7 @@ public class PlayerMovementController : MonoBehaviour {
 		UpdateStamina (speed);
 
 		Vector2 deltaMovement = movement * speed * Time.deltaTime;
-		Vector2 newPosition = rigidBody.position + deltaMovement;
-		rigidBody.MovePosition (newPosition);
+		Vector2 newPosition = player.rigidBody.position + deltaMovement;
+		player.rigidBody.MovePosition (newPosition);
 	}
 }
