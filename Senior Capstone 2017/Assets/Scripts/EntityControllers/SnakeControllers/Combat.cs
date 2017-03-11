@@ -14,8 +14,5 @@ namespace EntityControllers.SnakeControllers {
 				entity.Die ();
 			}
 		}
-
-		override public void OnTriggerEnter2D(Collider2D collision) {
-		}
 	}
 }

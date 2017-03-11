@@ -4,17 +4,12 @@ using Entities;
 namespace EntityControllers.SnakeControllers {
 	public class Movement : EntityControllers.EntityController {
 		float baseSpeed;
+		int direction = 1;
+		float distanceTravelled;
 
 		public Movement(Snake parent) : base(parent) {
 			baseSpeed = 3f;
-		}
-
-		Vector2 GetMovementUnitVector () {
-			float horizontal = -1 * Input.GetAxisRaw ("Horizontal");
-			float vertical = -1 * Input.GetAxisRaw ("Vertical");
-			Vector2 movement = new Vector2 (horizontal, vertical);
-			movement.Normalize ();
-			return movement;
+			distanceTravelled = 0f;
 		}
 
 		void NotifyAnimator (Vector2 movement) {
@@ -31,14 +26,17 @@ namespace EntityControllers.SnakeControllers {
 			if (entity.currentState == Entity.State.Dying) {
 				return;
 			}
-
-			Vector2 movement = GetMovementUnitVector ();
-			NotifyAnimator (movement);
-			if (movement == Vector2.zero) {
-				return;
+			if (distanceTravelled > 5) {
+				distanceTravelled = 0;
+				direction = -direction;
 			}
 
+			Vector2 movement = new Vector2 (direction, 0);
+			NotifyAnimator (movement);
+
 			Vector2 deltaMovement = movement * baseSpeed * Time.deltaTime;
+			distanceTravelled += deltaMovement.magnitude;
+
 			Vector2 newPosition = entity.rigidBody.position + deltaMovement;
 			entity.rigidBody.MovePosition (newPosition);
 		}

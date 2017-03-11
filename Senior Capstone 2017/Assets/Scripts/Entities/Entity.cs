@@ -7,8 +7,8 @@ namespace Entities {
 
     public Animator animator;
     public Rigidbody2D rigidBody;
-
     protected List<EntityController> controllers;
+    public Statistics stats;
 
     public enum State {
       Idling, Walking, Dying
@@ -31,27 +31,27 @@ namespace Entities {
       rigidBody.freezeRotation = true;
       currentState = State.Idling;
       controllers = new List<EntityController> ();
+      stats = new Statistics ();
       InitializeControllers ();
     }
 
     void Update () {
       if (currentState == State.Dying) return;
-
       foreach (EntityController controller in controllers) {
         controller.Update ();
       }
     }
 
-    void OnTriggerEnter2D (Collider2D collision) {
+    void OnCollisionEnter2D (Collision2D collision) {
       if (currentState == State.Dying) return;
-
       foreach (EntityController controller in controllers) {
-        controller.OnTriggerEnter2D (collision);
+        controller.OnCollisionEnter2D (collision);
       }
     }
 
     public void Die () {
       currentState = State.Dying;
+	  rigidBody.isKinematic = true;
       Destroy (gameObject, 2);
     }
   }
