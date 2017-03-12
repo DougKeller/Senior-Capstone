@@ -1,18 +1,22 @@
 ﻿using UnityEngine;
 using Entities;
 
-namespace EntityControllers.SnakeControllers {
-	public class Movement : EntityControllers.EntityController {
+namespace EntityControllers.SnakeControllers
+{
+	public class Movement : EntityControllers.EntityController
+	{
 		float baseSpeed;
 		int direction = 1;
 		float distanceTravelled;
 
-		public Movement(Snake parent) : base(parent) {
+		public Movement (Snake parent) : base (parent)
+		{
 			baseSpeed = 3f;
 			distanceTravelled = 0f;
 		}
 
-		void NotifyAnimator (Vector2 movement) {
+		void NotifyAnimator (Vector2 movement)
+		{
 			if (movement != Vector2.zero) {
 				entity.currentState = Entity.State.Walking;
 				entity.animator.SetFloat ("inputX", movement.x);
@@ -22,10 +26,8 @@ namespace EntityControllers.SnakeControllers {
 			}
 		}
 
-		override public void Update () {
-			if (entity.currentState == Entity.State.Dying) {
-				return;
-			}
+		override public void Update ()
+		{
 			if (distanceTravelled > 5) {
 				distanceTravelled = 0;
 				direction = -direction;

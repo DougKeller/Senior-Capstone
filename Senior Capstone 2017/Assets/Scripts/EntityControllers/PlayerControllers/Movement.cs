@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
 using Entities;
 
-namespace EntityControllers.PlayerControllers {
-	public class Movement : EntityController {
+namespace EntityControllers.PlayerControllers
+{
+	public class Movement : EntityController
+	{
 		float baseSpeed;
 		float stamina;
 		float runMultiplier;
 		float runCost;
 		float runRegen;
 
-		public Movement(Player parent) : base(parent) {
+		public Movement (Player parent) : base (parent)
+		{
 			baseSpeed = 3f;
 			runMultiplier = 2f;
 			stamina = 100f;
@@ -17,7 +20,8 @@ namespace EntityControllers.PlayerControllers {
 			runRegen = 1f;
 		}
 
-		Vector2 GetMovementUnitVector () {
+		Vector2 GetMovementUnitVector ()
+		{
 			float horizontal = Input.GetAxisRaw ("Horizontal");
 			float vertical = Input.GetAxisRaw ("Vertical");
 			Vector2 movement = new Vector2 (horizontal, vertical);
@@ -25,7 +29,8 @@ namespace EntityControllers.PlayerControllers {
 			return movement;
 		}
 
-		void NotifyAnimator (Vector2 movement) {
+		void NotifyAnimator (Vector2 movement)
+		{
 			if (movement != Vector2.zero) {
 				entity.currentState = Player.State.Walking;
 				entity.animator.SetFloat ("inputX", movement.x);
@@ -35,7 +40,8 @@ namespace EntityControllers.PlayerControllers {
 			}
 		}
 
-		bool IsRunning (Vector2 movement) {
+		bool IsRunning (Vector2 movement)
+		{
 			if (movement == Vector2.zero) {
 				return false;
 			}
@@ -44,7 +50,8 @@ namespace EntityControllers.PlayerControllers {
 			return shiftKeyPressed;
 		}
 
-		float GetSpeed (Vector2 movement) {
+		float GetSpeed (Vector2 movement)
+		{
 			float speed = baseSpeed;
 			float staminaCost = runCost * Time.deltaTime;
 			if (stamina > staminaCost && IsRunning (movement)) {
@@ -53,7 +60,8 @@ namespace EntityControllers.PlayerControllers {
 			return speed;
 		}
 
-		void RegenerateStamina () {
+		void RegenerateStamina ()
+		{
 			if (stamina < 100f) {
 				stamina += runRegen * Time.deltaTime;
 			} else if (stamina > 100f) {
@@ -61,7 +69,8 @@ namespace EntityControllers.PlayerControllers {
 			}
 		}
 
-		void UpdateStamina (float speed) {
+		void UpdateStamina (float speed)
+		{
 			float cost = runCost * Time.deltaTime;
 			if (stamina > cost && speed > baseSpeed) {
 				stamina -= cost;
@@ -70,7 +79,8 @@ namespace EntityControllers.PlayerControllers {
 			}
 		}
 
-		override public void Update () {
+		override public void Update ()
+		{
 			if (entity.currentState == Player.State.Dying) {
 				return;
 			}
