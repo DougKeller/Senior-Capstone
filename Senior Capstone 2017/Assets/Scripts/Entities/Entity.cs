@@ -8,27 +8,33 @@ namespace Entities
 	{
 
 		public Rigidbody2D rigidBody;
-		public new Collider2D collider;
-		protected List<EntityController> controllers;
 		public Statistics stats;
-
 		public virtual float deathDuration { get { return 0f; } }
 
+		protected List<EntityController> controllers;
+		protected Collider2D hitbox;
 		protected abstract void InitializeControllers ();
 
 		void SetPhysicsAttributes ()
 		{
-			Vector3 size = collider.bounds.size;
+			rigidBody.freezeRotation = true;
+
+			Collider2D[] colliders = GetComponentsInChildren<Collider2D> ();
+			hitbox = colliders [colliders.Length - 1];
+
+			Vector3 size = hitbox.bounds.size;
 			rigidBody.mass = size.x * size.y;
 			rigidBody.drag = Mathf.Pow (10, rigidBody.mass);
 		}
 
 		public virtual void Start ()
 		{
-			rigidBody.freezeRotation = true;
-			controllers = new List<EntityController> ();
+			Physics2D.IgnoreLayerCollision (6, 7);
 			stats = new Statistics ();
+
+			controllers = new List<EntityController> ();
 			InitializeControllers ();
+
 			SetPhysicsAttributes ();
 		}
 
@@ -58,8 +64,22 @@ namespace Entities
 		public virtual void Die ()
 		{
 			Destroy (rigidBody);
-			Destroy (collider);
+			Destroy (GetComponent<Collider>());
 			Destroy (gameObject, deathDuration);
+		}
+
+		public int GetDamage () {
+			return 10;
+		}
+
+		public void Attack (GameObject enemyGameObject) {
+			if (enemyGameObject.tag != "Hitbox") return;
+
+			enemyGameObject.SendMessageUpwards ("TakeDamage", this, SendMessageOptions.RequireReceiver);
+		}
+
+		void TakeDamage (Entity offender) {
+			stats.hitpoints -= offender.GetDamage ();
 		}
 	}
 }

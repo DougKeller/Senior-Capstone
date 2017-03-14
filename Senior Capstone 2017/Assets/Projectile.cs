@@ -8,7 +8,7 @@ namespace Entities.Static
 
     public override void Start () {
       base.Start ();
-      stats.speed = 1f;
+      stats.speed = 10f;
     }
 
     public override void Update () {
@@ -18,7 +18,7 @@ namespace Entities.Static
     }
 
     public override void OnTriggerEnter2D (Collider2D collider) {
-      collider.gameObject.GetComponent<Entities.Animated.Player> ().stats.hitpoints -= 10;
+      Attack (collider.gameObject);
       Die ();
     }
   }
