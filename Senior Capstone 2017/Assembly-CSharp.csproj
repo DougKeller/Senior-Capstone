@@ -47,13 +47,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AttackController.cs" />
-     <Compile Include="Assets\Projectile.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Entities\Animated\EntityAnimated.cs" />
      <Compile Include="Assets\Scripts\Entities\Animated\Player.cs" />
      <Compile Include="Assets\Scripts\Entities\Animated\Snake.cs" />
      <Compile Include="Assets\Scripts\Entities\Entity.cs" />
      <Compile Include="Assets\Scripts\Entities\Static\EntityStatic.cs" />
+     <Compile Include="Assets\Scripts\Entities\Static\Projectile.cs" />
      <Compile Include="Assets\Scripts\Entities\Statistics.cs" />
      <Compile Include="Assets\Scripts\EntityControllers\Animated\EntityAnimatedController.cs" />
      <Compile Include="Assets\Scripts\EntityControllers\Animated\PlayerControllers\Combat.cs" />
