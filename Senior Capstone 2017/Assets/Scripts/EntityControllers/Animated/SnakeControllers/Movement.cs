@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
-using Entities;
+using Entities.Animated;
 
-namespace EntityControllers.SnakeControllers
+namespace EntityControllers.Animated.SnakeControllers
 {
-	public class Movement : EntityControllers.EntityController
+	public class Movement : EntityAnimatedController
 	{
 		float baseSpeed;
 		int direction = 1;
@@ -18,11 +18,11 @@ namespace EntityControllers.SnakeControllers
 		void NotifyAnimator (Vector2 movement)
 		{
 			if (movement != Vector2.zero) {
-				entity.currentState = Entity.State.Walking;
+				entity.currentState = Snake.State.Walking;
 				entity.animator.SetFloat ("inputX", movement.x);
 				entity.animator.SetFloat ("inputY", movement.y);
 			} else {
-				entity.currentState = Entity.State.Idling;
+				entity.currentState = Snake.State.Idling;
 			}
 		}
 

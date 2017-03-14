@@ -7,7 +7,7 @@ namespace EntityControllers
 	{
 		private Entity _entity;
 
-		protected Entity entity {
+		protected virtual Entity entity {
 			get { return _entity; }
 		}
 

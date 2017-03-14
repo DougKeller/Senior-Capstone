@@ -1,8 +1,8 @@
-﻿using EntityControllers.SnakeControllers;
+﻿using EntityControllers.Animated.SnakeControllers;
 
-namespace Entities
+namespace Entities.Animated
 {
-	public class Snake : Entities.Entity
+	public class Snake : EntityAnimated
 	{
 		protected override void InitializeControllers ()
 		{

@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
-using Entities;
+using Entities.Animated;
 
-namespace EntityControllers.PlayerControllers
+namespace EntityControllers.Animated.PlayerControllers
 {
-	public class Movement : EntityController
+	public class Movement : EntityAnimatedController
 	{
 		float baseSpeed;
 		float stamina;

@@ -1,8 +1,8 @@
-﻿using EntityControllers.PlayerControllers;
+﻿using EntityControllers.Animated.PlayerControllers;
 
-namespace Entities
+namespace Entities.Animated
 {
-	public class Player : Entities.Entity
+	public class Player : EntityAnimated
 	{
 		public override float deathDuration { get { return 2f; } }
 
