@@ -5,13 +5,11 @@ namespace EntityControllers.Animated.SnakeControllers
 {
 	public class Movement : EntityAnimatedController
 	{
-		float baseSpeed;
 		int direction = 1;
 		float distanceTravelled;
 
 		public Movement (Snake parent) : base (parent)
 		{
-			baseSpeed = 3f;
 			distanceTravelled = 0f;
 		}
 
@@ -36,7 +34,7 @@ namespace EntityControllers.Animated.SnakeControllers
 			Vector2 movement = new Vector2 (direction, 0);
 			NotifyAnimator (movement);
 
-			Vector2 deltaMovement = movement * baseSpeed * Time.deltaTime;
+			Vector2 deltaMovement = movement * entity.stats.speed * Time.deltaTime;
 			distanceTravelled += deltaMovement.magnitude;
 
 			Vector2 newPosition = entity.rigidBody.position + deltaMovement;

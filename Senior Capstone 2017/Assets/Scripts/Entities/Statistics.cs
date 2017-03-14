@@ -7,10 +7,12 @@ namespace Entities
 	public class Statistics
 	{
 		public int hitpoints;
+		public float speed;
 
 		public Statistics ()
 		{
 			hitpoints = 10;
+			speed = 3f;
 		}
 	}
 }

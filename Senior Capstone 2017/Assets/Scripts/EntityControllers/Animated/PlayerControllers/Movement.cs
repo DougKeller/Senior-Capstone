@@ -5,7 +5,6 @@ namespace EntityControllers.Animated.PlayerControllers
 {
 	public class Movement : EntityAnimatedController
 	{
-		float baseSpeed;
 		float stamina;
 		float runMultiplier;
 		float runCost;
@@ -13,7 +12,6 @@ namespace EntityControllers.Animated.PlayerControllers
 
 		public Movement (Player parent) : base (parent)
 		{
-			baseSpeed = 3f;
 			runMultiplier = 2f;
 			stamina = 100f;
 			runCost = 5f;
@@ -52,7 +50,7 @@ namespace EntityControllers.Animated.PlayerControllers
 
 		float GetSpeed (Vector2 movement)
 		{
-			float speed = baseSpeed;
+			float speed = entity.stats.speed;
 			float staminaCost = runCost * Time.deltaTime;
 			if (stamina > staminaCost && IsRunning (movement)) {
 				speed *= runMultiplier;
@@ -72,7 +70,7 @@ namespace EntityControllers.Animated.PlayerControllers
 		void UpdateStamina (float speed)
 		{
 			float cost = runCost * Time.deltaTime;
-			if (stamina > cost && speed > baseSpeed) {
+			if (stamina > cost && speed > entity.stats.speed) {
 				stamina -= cost;
 			} else {
 				RegenerateStamina ();
