@@ -5,12 +5,14 @@ namespace EntityControllers.Animated.SnakeControllers
 {
 	public class Movement : EntityAnimatedController
 	{
-		int direction = 1;
-		float distanceTravelled;
+		Vector2 a, b, target;
 
 		public Movement (Snake parent) : base (parent)
 		{
-			distanceTravelled = 0f;
+			Vector2 distance = new Vector2 (5, 0);
+			a = entity.rigidBody.position - distance;
+			b = entity.rigidBody.position + distance;
+			target = a;
 		}
 
 		void NotifyAnimator (Vector2 movement)
@@ -24,21 +26,27 @@ namespace EntityControllers.Animated.SnakeControllers
 			}
 		}
 
+		Vector2 MovementVectorToTarget () {
+			Vector2 position = entity.rigidBody.position;
+			return target - position;
+		}
+
 		override public void Update ()
 		{
-			if (distanceTravelled > 5) {
-				distanceTravelled = 0;
-				direction = -direction;
+			Vector2 movement = MovementVectorToTarget ();
+			if (movement.magnitude < 0.1f) {
+				target = target == a ? b : a;
 			}
 
-			Vector2 movement = new Vector2 (direction, 0);
+			movement = movement.normalized * entity.stats.speed * Time.deltaTime;
 			NotifyAnimator (movement);
 
-			Vector2 deltaMovement = movement * entity.stats.speed * Time.deltaTime;
-			distanceTravelled += deltaMovement.magnitude;
-
-			Vector2 newPosition = entity.rigidBody.position + deltaMovement;
+			Vector2 newPosition = entity.rigidBody.position + movement;
 			entity.rigidBody.MovePosition (newPosition);
+		}
+
+		override public void OnCollisionEnter2D (Collision2D collision) {
+			target = target == a ? b : a;
 		}
 	}
 }
