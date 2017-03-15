@@ -1,16 +1,18 @@
 ﻿using UnityEngine;
-using Entities.Animated;
+using Entities;
 
-namespace EntityControllers.Animated.PlayerControllers
+namespace EntityControllers.PlayerControllers
 {
-	public class Movement : EntityAnimatedController
+	public class Movement : MonoBehaviour
 	{
+		public Entity entity;
+
 		float stamina;
 		float runMultiplier;
 		float runCost;
 		float runRegen;
 
-		public Movement (Player parent) : base (parent)
+		void Start ()
 		{
 			runMultiplier = 2f;
 			stamina = 100f;
@@ -30,11 +32,11 @@ namespace EntityControllers.Animated.PlayerControllers
 		void NotifyAnimator (Vector2 movement)
 		{
 			if (movement != Vector2.zero) {
-				entity.currentState = Player.State.Walking;
-				entity.animator.SetFloat ("inputX", movement.x);
-				entity.animator.SetFloat ("inputY", movement.y);
+				entity.animated.currentState = Animated.State.Walking;
+				entity.animated.animator.SetFloat ("inputX", movement.x);
+				entity.animated.animator.SetFloat ("inputY", movement.y);
 			} else {
-				entity.currentState = Player.State.Idling;
+				entity.animated.currentState = Animated.State.Idling;
 			}
 		}
 
@@ -77,9 +79,9 @@ namespace EntityControllers.Animated.PlayerControllers
 			}
 		}
 
-		override public void Update ()
+		void Update ()
 		{
-			if (entity.currentState == Player.State.Dying) {
+			if (entity.animated.currentState == Animated.State.Dying) {
 				return;
 			}
 

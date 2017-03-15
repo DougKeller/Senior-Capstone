@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
-using Entities.Animated;
+using Entities;
 
-namespace EntityControllers.Animated.SnakeControllers
+namespace EntityControllers.SnakeControllers
 {
-	public class Movement : EntityAnimatedController
+	public class Movement : MonoBehaviour
 	{
+		public Entity entity;
 		Vector2 a, b, target;
 
-		public Movement (Snake parent) : base (parent)
+		void Start ()
 		{
-			Vector2 distance = new Vector2 (((Snake)entity).distance, 0);
+			Vector2 distance = new Vector2 (GetComponent<Snake> ().distance, 0);
 			a = entity.rigidBody.position - distance;
 			b = entity.rigidBody.position + distance;
 			target = a;
@@ -19,11 +20,11 @@ namespace EntityControllers.Animated.SnakeControllers
 		void NotifyAnimator (Vector2 movement)
 		{
 			if (movement != Vector2.zero) {
-				entity.currentState = Snake.State.Walking;
-				entity.animator.SetFloat ("inputX", movement.x);
-				entity.animator.SetFloat ("inputY", movement.y);
+				entity.animated.currentState = Animated.State.Walking;
+				entity.animated.animator.SetFloat ("inputX", movement.x);
+				entity.animated.animator.SetFloat ("inputY", movement.y);
 			} else {
-				entity.currentState = Snake.State.Idling;
+				entity.animated.currentState = Animated.State.Idling;
 			}
 		}
 
@@ -32,8 +33,8 @@ namespace EntityControllers.Animated.SnakeControllers
 			Collider2D[] colliders = Physics2D.OverlapCircleAll (entity.hitbox.bounds.center, 5f);
 			foreach (Collider2D collider in colliders) {
 				if (collider.gameObject.tag == "Player") {
-					Player player = collider.gameObject.GetComponent<Player> ();
-					if (player.IsDying ()) break;
+					Entity player = collider.gameObject.GetComponent<Entity> ();
+					if (player.animated.IsDying ()) break;
 
 					entity.stats.speed = 3.5f;
 					target = player.hitbox.bounds.ClosestPoint (entity.rigidBody.position);
@@ -54,7 +55,7 @@ namespace EntityControllers.Animated.SnakeControllers
 			return target - position;
 		}
 
-		override public void Update ()
+		void Update ()
 		{
 			SearchForTargets ();
 			Vector2 movement = MovementVectorToTarget ();
@@ -70,7 +71,7 @@ namespace EntityControllers.Animated.SnakeControllers
 			entity.rigidBody.MovePosition (newPosition);
 		}
 
-		override public void OnCollisionEnter2D (Collision2D collision) {
+		void OnCollisionEnter2D (Collision2D collision) {
 			target = target == a ? b : a;
 		}
 	}

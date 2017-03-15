@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
-using Entities.Animated;
+using Entities;
 
-namespace EntityControllers.Animated.SnakeControllers
+namespace EntityControllers.SnakeControllers
 {
-	public class Combat : EntityAnimatedController
+	public class Combat : MonoBehaviour
 	{
-		public Combat (Snake snake) : base (snake)
+		public Entity entity;
+		void Start ()
 		{
 			entity.stats.hitpoints = 10;
 			entity.stats.attackRange = 0.5f;
