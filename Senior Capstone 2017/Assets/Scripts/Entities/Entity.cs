@@ -25,10 +25,7 @@ namespace Entities
 
 		void Start ()
 		{
-			stats = AddComponent<Statistics> () as Statistics;
 			Physics2D.IgnoreLayerCollision (6, 7);
-			deathDuration = 0f;
-
 			SetPhysicsAttributes ();
 		}
 
@@ -77,7 +74,7 @@ namespace Entities
 			Transform projectile = MonoBehaviour.Instantiate (prefab, start, Quaternion.identity);
 			projectile.transform.rotation = Quaternion.Euler (rotationVector);
 
-			Physics2D.IgnoreCollision (hitbox, projectile.gameObject.GetComponent<Entity> ().hitbox);
+			Physics2D.IgnoreCollision (hitbox, projectile.gameObject.GetComponent<Projectile> ().collider);
 		}
 	}
 }
