@@ -7,6 +7,7 @@ namespace Entities
 		public Entity entity;
 
 		public int hitpoints;
+		public int maxHitpoints;
 		public float speed;
 		public int damage;
 		public float attackRange;
@@ -15,7 +16,7 @@ namespace Entities
 
 		public Statistics ()
 		{
-			hitpoints = 10;
+			hitpoints = maxHitpoints = 10;
 			speed = 3f;
 			damage = 1;
 			attackRange = 0f;
