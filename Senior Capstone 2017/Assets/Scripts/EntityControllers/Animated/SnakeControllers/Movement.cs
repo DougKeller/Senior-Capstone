@@ -9,10 +9,11 @@ namespace EntityControllers.Animated.SnakeControllers
 
 		public Movement (Snake parent) : base (parent)
 		{
-			Vector2 distance = new Vector2 (5, 0);
+			Vector2 distance = new Vector2 (((Snake)entity).distance, 0);
 			a = entity.rigidBody.position - distance;
 			b = entity.rigidBody.position + distance;
 			target = a;
+			entity.stats.speed = 1f;
 		}
 
 		void NotifyAnimator (Vector2 movement)
