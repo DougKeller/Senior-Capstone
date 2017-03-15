@@ -36,10 +36,8 @@ namespace EntityControllers.Animated.SnakeControllers
 					if (player.IsDying ()) break;
 
 					entity.stats.speed = 3.5f;
-					target = player.hitbox.bounds.center;
-					if (Vector2.Distance (entity.rigidBody.position, target) < entity.stats.attackRange) {
-						entity.AttackIfAble (player);
-					}
+					target = player.hitbox.bounds.ClosestPoint (entity.rigidBody.position);
+					entity.AttackIfAble (player);
 
 					return;
 				}

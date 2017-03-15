@@ -91,6 +91,10 @@ namespace Entities
 		}
 
 		public void AttackIfAble (Entity otherEntity) {
+			Vector3 point = otherEntity.hitbox.bounds.ClosestPoint (rigidBody.position);
+			float distance = Vector2.Distance (point, rigidBody.position);
+			if (distance > stats.attackRange)
+				return;
 			AttackIfAble (otherEntity.hitbox.gameObject);
 		}
 
