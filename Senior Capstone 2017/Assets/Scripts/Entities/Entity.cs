@@ -13,6 +13,8 @@ namespace Entities
 		public Collider2D hitbox;
 		public virtual float deathDuration { get { return 0f; } }
 
+		private float attackCooldown;
+
 		protected List<EntityController> controllers;
 		protected abstract void InitializeControllers ();
 
@@ -24,8 +26,13 @@ namespace Entities
 			hitbox = colliders [colliders.Length - 1];
 
 			Vector3 size = hitbox.bounds.size;
-			rigidBody.mass = size.x * size.y;
+			rigidBody.mass = size.x * size.x * size.y * size.y;
 			rigidBody.drag = Mathf.Pow (10, rigidBody.mass);
+		}
+
+		void SetCombatAttributes ()
+		{
+			attackCooldown = 0f;
 		}
 
 		public virtual void Start ()
@@ -37,11 +44,13 @@ namespace Entities
 			InitializeControllers ();
 
 			SetPhysicsAttributes ();
+			SetCombatAttributes ();
 		}
 
 		public virtual void Update ()
 		{
 			if (stats.hitpoints <= 0) Die ();
+			if (attackCooldown > 0) attackCooldown -= Time.deltaTime;
 
 			foreach (EntityController controller in controllers) {
 				controller.Update ();
@@ -70,13 +79,19 @@ namespace Entities
 		}
 
 		public int GetDamage () {
-			return 5;
+			return stats.damage;
 		}
 
-		public void Attack (GameObject enemyGameObject) {
+		public void AttackIfAble (GameObject enemyGameObject) {
 			if (enemyGameObject.tag != "Hitbox") return;
+			if (attackCooldown > 0) return;
 
+			attackCooldown = stats.attackSpeed;
 			enemyGameObject.SendMessageUpwards ("TakeDamage", this, SendMessageOptions.DontRequireReceiver);
+		}
+
+		public void AttackIfAble (Entity otherEntity) {
+			AttackIfAble (otherEntity.hitbox.gameObject);
 		}
 
 		void TakeDamage (Entity offender) {

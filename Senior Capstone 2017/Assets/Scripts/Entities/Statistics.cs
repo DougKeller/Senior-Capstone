@@ -8,11 +8,17 @@ namespace Entities
 	{
 		public int hitpoints;
 		public float speed;
+		public int damage;
+		public float attackRange;
+		public float attackSpeed;
 
 		public Statistics ()
 		{
 			hitpoints = 10;
 			speed = 3f;
+			damage = 1;
+			attackRange = 0f;
+			attackSpeed = 0f;
 		}
 	}
 }

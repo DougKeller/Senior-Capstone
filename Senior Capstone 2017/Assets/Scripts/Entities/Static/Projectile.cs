@@ -9,6 +9,7 @@ namespace Entities.Static
 		public override void Start () {
 			base.Start ();
 			stats.speed = 20f;
+			stats.damage = 5;
 			Invoke ("Die", 1f);
 		}
 
@@ -19,7 +20,7 @@ namespace Entities.Static
 		}
 
 		public override void OnTriggerEnter2D (Collider2D collider) {
-			Attack (collider.gameObject);
+			AttackIfAble (collider.gameObject);
 			Die ();
 		}
 	}

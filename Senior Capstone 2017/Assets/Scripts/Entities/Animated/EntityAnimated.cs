@@ -34,19 +34,19 @@ namespace Entities.Animated
 
     public override void Update ()
     {
-      if (currentState == State.Dying) return;
+			if (IsDying ()) return;
       base.Update();
     }
 
     public override void OnCollisionEnter2D (Collision2D collision)
     {
-      if (currentState == State.Dying) return;
+			if (IsDying ()) return;
       base.OnCollisionEnter2D(collision);
     }
 
     public override void OnTriggerEnter2D (Collider2D collision)
     {
-      if (currentState == State.Dying) return;
+			if (IsDying ()) return;
       base.OnTriggerEnter2D(collision);
     }
 
@@ -55,5 +55,10 @@ namespace Entities.Animated
       base.Die();
       currentState = State.Dying;
     }
+
+		public bool IsDying ()
+		{
+			return currentState == State.Dying;
+		}
   }
 }
