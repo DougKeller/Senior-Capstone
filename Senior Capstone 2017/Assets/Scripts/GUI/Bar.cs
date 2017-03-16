@@ -14,14 +14,14 @@ namespace GUI
     float HealthAmount ()
     {
       if (!target) return 0f;
-			Statistics stats = target.GetComponent<Statistics> ();
+			Statistics.Stats stats = target.GetComponent<Statistics.Stats> ();
 			return stats.hitpoints / (float)stats.maxHitpoints;
     }
 
     float StaminaAmount ()
     {
       if (!target) return 0f;
-      Statistics stats = target.GetComponent<Statistics> ();
+      Statistics.Stats stats = target.GetComponent<Statistics.Stats> ();
 			return stats.stamina / 100f;
     }
 

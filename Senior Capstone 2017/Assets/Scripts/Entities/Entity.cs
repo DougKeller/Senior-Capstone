@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Entities
@@ -6,7 +5,7 @@ namespace Entities
 	public class Entity : MonoBehaviour
 	{
 		public Rigidbody2D rigidBody;
-		public Statistics stats;
+		public Statistics.Stats stats;
 		public Collider2D hitbox;
 		public float deathDuration;
 		public Animated animated;
