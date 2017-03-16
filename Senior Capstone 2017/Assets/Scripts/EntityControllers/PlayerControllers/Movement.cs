@@ -22,8 +22,8 @@ namespace EntityControllers.PlayerControllers
 		void Start ()
 		{
 			runMultiplier = 2f;
-			runCost = 10f;
-			runRegen = 5f;
+			runCost = 20f;
+			runRegen = 10f;
 		}
 
 		Vector2 GetMovementUnitVector ()
@@ -68,6 +68,8 @@ namespace EntityControllers.PlayerControllers
 
 		void RegenerateStamina ()
 		{
+			if (Input.GetKey(KeyCode.LeftShift) && entity.animated.currentState == Animated.State.Walking)
+				return;
 			if (stamina < 100f) {
 				stamina += runRegen * Time.deltaTime;
 			} else if (stamina > 100f) {
