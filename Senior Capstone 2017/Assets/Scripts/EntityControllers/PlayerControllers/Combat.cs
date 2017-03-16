@@ -9,7 +9,7 @@ namespace EntityControllers.PlayerControllers
 
 		void Update ()
 		{
-			if (Input.GetButtonDown("Fire1") && entity.stats.CanAttack ()) {
+			if (Input.GetButton("Fire1") && entity.stats.CanAttack ()) {
 				Vector2 mousePosition = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
 				Vector3 targetPosition = Camera.main.ScreenToWorldPoint (mousePosition);
 				entity.FireProjectile (GetComponent<Player> ().arrowPrefab, targetPosition);

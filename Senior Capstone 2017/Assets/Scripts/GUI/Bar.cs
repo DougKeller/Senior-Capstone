@@ -7,26 +7,28 @@ namespace GUI
   class Bar : MonoBehaviour
   {
 		public GameObject target;
-		public int property;
 
-		float FillAmount ()
-		{
-			if (!target)
-				return 0f;
-			
+    public Image healthBar;
+    public Image staminaBar;
+
+    float HealthAmount ()
+    {
+      if (!target) return 0f;
 			Statistics stats = target.GetComponent<Statistics> ();
-			switch (property) {
-			case 1:
-				return stats.hitpoints / (float)stats.maxHitpoints;
-			case 2:
-				return stats.stamina / 100f;
-			}
-			return 0f;
-		}
+			return stats.hitpoints / (float)stats.maxHitpoints;
+    }
+
+    float StaminaAmount ()
+    {
+      if (!target) return 0f;
+      Statistics stats = target.GetComponent<Statistics> ();
+			return stats.stamina / 100f;
+    }
 
     void Update ()
     {
-			GetComponent<Image> ().fillAmount = FillAmount ();
+			healthBar.fillAmount = HealthAmount ();
+      staminaBar.fillAmount = StaminaAmount ();
     }
   }
 }

@@ -36,7 +36,7 @@ namespace EntityControllers.SnakeControllers
 					Entity player = collider.gameObject.GetComponent<Entity> ();
 					if (player.animated.IsDying ()) break;
 
-					entity.stats.speed = 3.5f;
+					entity.stats.speed = 4.5f;
 					target = player.hitbox.bounds.ClosestPoint (entity.rigidBody.position);
 					entity.AttackIfAble (player);
 
