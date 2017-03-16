@@ -12,16 +12,14 @@ namespace Entities
 		public int damage;
 		public float attackRange;
 		public float attackSpeed;
+		public float stamina;
+
 		private float attackCooldown;
 
 		public Statistics ()
 		{
 			hitpoints = maxHitpoints = 10;
-			speed = 3f;
-			damage = 1;
-			attackRange = 0f;
-			attackSpeed = 0f;
-			attackCooldown = 0f;
+			stamina = 100f;
 		}
 
 		public bool CanAttack ()

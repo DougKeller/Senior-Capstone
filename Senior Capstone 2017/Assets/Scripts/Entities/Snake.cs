@@ -7,10 +7,5 @@ namespace Entities
 	{
     public Entity entity;
 		public float distance;
-
-    void Start ()
-    {
-      distance = 5f;
-    }
 	}
 }

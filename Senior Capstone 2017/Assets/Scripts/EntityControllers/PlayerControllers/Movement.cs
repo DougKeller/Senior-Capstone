@@ -7,17 +7,23 @@ namespace EntityControllers.PlayerControllers
 	{
 		public Entity entity;
 
-		float stamina;
 		float runMultiplier;
 		float runCost;
 		float runRegen;
+		float stamina {
+			get {
+				return entity.stats.stamina;
+			}
+			set {
+				entity.stats.stamina = value;
+			}
+		}
 
 		void Start ()
 		{
 			runMultiplier = 2f;
-			stamina = 100f;
-			runCost = 5f;
-			runRegen = 1f;
+			runCost = 10f;
+			runRegen = 5f;
 		}
 
 		Vector2 GetMovementUnitVector ()
@@ -74,8 +80,6 @@ namespace EntityControllers.PlayerControllers
 			float cost = runCost * Time.deltaTime;
 			if (stamina > cost && speed > entity.stats.speed) {
 				stamina -= cost;
-			} else {
-				RegenerateStamina ();
 			}
 		}
 
@@ -84,6 +88,7 @@ namespace EntityControllers.PlayerControllers
 			if (entity.animated.currentState == Animated.State.Dying) {
 				return;
 			}
+			RegenerateStamina ();
 
 			Vector2 movement = GetMovementUnitVector ();
 			NotifyAnimator (movement);

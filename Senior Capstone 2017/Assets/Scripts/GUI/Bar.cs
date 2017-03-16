@@ -1,36 +1,32 @@
 using UnityEngine;
+using UnityEngine.UI;
+using Entities;
 
 namespace GUI
 {
   class Bar : MonoBehaviour
   {
 		public GameObject target;
-    public GameObject backLeft, backMiddle, backRight;
-		public GameObject barLeft, barMiddle, barRight;
-		private Entities.Statistics stats;
-		private SpriteRenderer blSprite, bmSprite, brSprite;
-		private SpriteRenderer lSprite, mSprite, rSprite;
+		public int property;
 
-		void Start ()
+		float FillAmount ()
 		{
-			stats = target.GetComponent<Entities.Statistics> ();
-			blSprite = backLeft.GetComponent<SpriteRenderer> ();
-			bmSprite = backMiddle.GetComponent<SpriteRenderer> ();
-			brSprite = backRight.GetComponent<SpriteRenderer> ();
-			lSprite = barLeft.GetComponent<SpriteRenderer> ();
-			mSprite = barMiddle.GetComponent<SpriteRenderer> ();
-			rSprite = barRight.GetComponent<SpriteRenderer> ();
-		}
-
-		Bounds BoundsFor (GameObject obj)
-		{
-			return obj.GetComponent<SpriteRenderer> ().bounds;
+			if (!target)
+				return 0f;
+			
+			Statistics stats = target.GetComponent<Statistics> ();
+			switch (property) {
+			case 1:
+				return stats.hitpoints / (float)stats.maxHitpoints;
+			case 2:
+				return stats.stamina / 100f;
+			}
+			return 0f;
 		}
 
     void Update ()
     {
-			float length = stats.hitpoints * 8.5f / stats.maxHitpoints;
-			barMiddle.transform.localScale = new Vector3 (length, 1, 1);
+			GetComponent<Image> ().fillAmount = FillAmount ();
     }
   }
 }
