@@ -30,7 +30,7 @@ namespace EntityControllers.SnakeControllers
 
 		void SearchForTargets ()
 		{
-			Collider2D[] colliders = Physics2D.OverlapCircleAll (entity.hitbox.bounds.center, 5f);
+			Collider2D[] colliders = Physics2D.OverlapCircleAll (entity.hitbox.bounds.center, 5F);
 			foreach (Collider2D collider in colliders) {
 				if (collider.gameObject.tag == "Player") {
 					Entity player = collider.gameObject.GetComponent<Entity> ();
@@ -44,7 +44,7 @@ namespace EntityControllers.SnakeControllers
 				}
 			}
 
-			entity.stats.speed = 2f;
+			entity.stats.speed = 3f;
 			if (target != a && target != b) {
 				target = a;
 			}
