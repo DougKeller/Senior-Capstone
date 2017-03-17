@@ -8,7 +8,7 @@ namespace Entities
 		public new Collider2D collider;
 
 		void Start () {
-			Invoke ("Die", 1f);
+			Invoke ("Die", 3f);
 		}
 
 		void Update () {
