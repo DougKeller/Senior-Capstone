@@ -23,7 +23,7 @@ namespace Entities
 		}
 
 		void OnTriggerEnter2D (Collider2D collider) {
-			entity.AttackIfAble (collider.gameObject);
+			entity.combat.AttackIfAble (collider.gameObject);
 			entity.Die ();
 		}
 	}

@@ -12,11 +12,8 @@ namespace Statistics
     public int maxHitpoints;
     public float speed;
     public int damage;
-    public float attackRange;
-    public float attackSpeed;
     public float stamina;
 
-    private float attackCooldown;
     private float healthProgress;
     private float healthRegen;
 
@@ -30,16 +27,6 @@ namespace Statistics
       healthRegen = 1 / 10f;
 
       skills = Skill.GenerateMap();
-    }
-
-    public bool CanAttack ()
-    {
-      return attackCooldown <= 0f;
-    }
-
-    public void Attack ()
-    {
-      attackCooldown = attackSpeed;
     }
 
     void RegenerateHealth ()
@@ -58,7 +45,6 @@ namespace Statistics
     void Update ()
     {
       if (hitpoints <= 0) entity.Die ();
-      if (attackCooldown > 0) attackCooldown -= Time.deltaTime;
       RegenerateHealth ();
     }
   }

@@ -38,7 +38,7 @@ namespace EntityControllers.SnakeControllers
 
 					entity.stats.speed = 4.5f;
 					target = player.hitbox.bounds.ClosestPoint (entity.rigidBody.position);
-					entity.AttackIfAble (player);
+					entity.combat.AttackIfAble (player);
 
 					return;
 				}

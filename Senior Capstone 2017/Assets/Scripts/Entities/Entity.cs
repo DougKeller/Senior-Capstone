@@ -6,9 +6,10 @@ namespace Entities
 	{
 		public Rigidbody2D rigidBody;
 		public Statistics.Stats stats;
-		public Collider2D hitbox;
 		public float deathDuration;
 		public Animated animated;
+		public Collider2D hitbox;
+		public Combat combat;
 
 		void SetPhysicsAttributes ()
 		{
@@ -36,44 +37,6 @@ namespace Entities
 			if (animated) {
 				animated.currentState = Animated.State.Dying;
 			}
-		}
-
-		public int GetDamage () {
-			return stats.damage;
-		}
-
-		public void AttackIfAble (GameObject enemyGameObject) {
-			if (enemyGameObject.tag != "Hitbox") return;
-			if (!stats.CanAttack ()) return;
-
-			stats.Attack ();
-			enemyGameObject.SendMessageUpwards ("TakeDamage", this, SendMessageOptions.DontRequireReceiver);
-		}
-
-		public void AttackIfAble (Entity otherEntity) {
-			Vector3 point = otherEntity.hitbox.bounds.ClosestPoint (rigidBody.position);
-			float distance = Vector2.Distance (point, rigidBody.position);
-			if (distance > stats.attackRange)
-				return;
-			AttackIfAble (otherEntity.hitbox.gameObject);
-		}
-
-		void TakeDamage (Entity offender) {
-			stats.hitpoints -= offender.GetDamage ();
-		}
-
-		public void FireProjectile (Transform prefab, Vector3 target)
-		{
-			Vector3 start = hitbox.bounds.center;
-			Vector3 direction = start - target;
-
-			float angle = Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg + 90;
-			Vector3 rotationVector = new Vector3 (0, 0, angle);
-
-			Transform projectile = MonoBehaviour.Instantiate (prefab, start, Quaternion.identity);
-			projectile.transform.rotation = Quaternion.Euler (rotationVector);
-
-			Physics2D.IgnoreCollision (hitbox, projectile.gameObject.GetComponent<Projectile> ().collider);
 		}
 	}
 }
