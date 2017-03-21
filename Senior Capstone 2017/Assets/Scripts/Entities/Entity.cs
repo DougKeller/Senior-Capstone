@@ -61,19 +61,5 @@ namespace Entities
 		void TakeDamage (Entity offender) {
 			stats.hitpoints -= offender.GetDamage ();
 		}
-
-		public void FireProjectile (Transform prefab, Vector3 target)
-		{
-			Vector3 start = hitbox.bounds.center;
-			Vector3 direction = start - target;
-
-			float angle = Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg + 90;
-			Vector3 rotationVector = new Vector3 (0, 0, angle);
-
-			Transform projectile = MonoBehaviour.Instantiate (prefab, start, Quaternion.identity);
-			projectile.transform.rotation = Quaternion.Euler (rotationVector);
-
-			Physics2D.IgnoreCollision (hitbox, projectile.gameObject.GetComponent<Projectile> ().collider);
-		}
 	}
 }
