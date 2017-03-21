@@ -64,15 +64,18 @@ namespace EntityControllers.PlayerControllers
 			SetLabels ();
 		}
 
-		public void FireProjectile (Transform prefab, Vector3 target)
+		public void FireProjectile ()
 		{
+			Vector2 mousePosition = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
+			Vector3 target = Camera.main.ScreenToWorldPoint (mousePosition);
+
 			Vector3 start = entity.hitbox.bounds.center;
 			Vector3 direction = start - target;
 
 			float angle = Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg + 90;
 			Vector3 rotationVector = new Vector3 (0, 0, angle);
 
-			Transform projectile = MonoBehaviour.Instantiate (prefab, start, Quaternion.identity);
+			Transform projectile = MonoBehaviour.Instantiate (arrowPrefab, start, Quaternion.identity);
 			projectile.transform.rotation = Quaternion.Euler (rotationVector);
 
 			Physics2D.IgnoreCollision (entity.hitbox, projectile.gameObject.GetComponent<Projectile> ().collider);
@@ -86,14 +89,14 @@ namespace EntityControllers.PlayerControllers
 			Vector3 start = entity.hitbox.bounds.center;
 			Vector3 direction = start - target;
 
-			Transform projectile = MonoBehaviour.Instantiate (swordPrefab, start, Quaternion.identity);
-			float angle = Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg + 180;
+			float angle = Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg + 90;
 			Vector3 rotationVector = new Vector3 (0, 0, angle);
+
+			Transform projectile = MonoBehaviour.Instantiate (swordPrefab, start, Quaternion.identity);
+			projectile.SetParent (gameObject.transform);
 			projectile.transform.rotation = Quaternion.Euler (rotationVector);
 
-			projectile.transform.SetParent (transform, false);
-
-			Physics2D.IgnoreCollision (entity.hitbox, projectile.gameObject.GetComponent<SwordSwing> ().collider);
+			Physics2D.IgnoreCollision (entity.hitbox, projectile.gameObject.GetComponent<Sword> ().collider);
 		}
 
 		private void MakeMeleeAttack ()
@@ -106,9 +109,7 @@ namespace EntityControllers.PlayerControllers
 		{
 			bool hasArrows = numArrows > 0;
 			if (numArrows > 0) {
-				Vector2 mousePosition = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
-				Vector3 targetPosition = Camera.main.ScreenToWorldPoint (mousePosition);
-				FireProjectile (arrowPrefab, targetPosition);
+				FireProjectile ();
 				entity.stats.Attack ();
 				numArrows--;
 			}
