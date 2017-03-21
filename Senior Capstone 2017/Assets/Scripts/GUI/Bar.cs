@@ -17,14 +17,15 @@ namespace GUI
     {
       if (!target) return 0f;
 			Statistics.Stats stats = target.GetComponent<Statistics.Stats> ();
-			return stats.hitpoints / (float)stats.maxHitpoints;
+			return stats.hitpoints / (float)stats.MaxHitpoints ();
     }
 
     float StaminaAmount ()
     {
       if (!target) return 0f;
       Statistics.Stats stats = target.GetComponent<Statistics.Stats> ();
-			return stats.stamina / 100f;
+//			return stats.stamina / 100f;
+			return stats.PercentOfLevelComplete ();
     }
 
     void Update ()

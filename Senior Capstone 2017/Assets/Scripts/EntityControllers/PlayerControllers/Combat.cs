@@ -16,6 +16,7 @@ namespace EntityControllers.PlayerControllers
 
 		public Text arrowQuantity;
 		public Text currentWeapon;
+		public Text level;
 
 		public enum AttackMode {
 			Bow, Fire, Sword
@@ -44,6 +45,7 @@ namespace EntityControllers.PlayerControllers
 		{
 			arrowQuantity.text = "x" + numArrows;
 			currentWeapon.text = attackMode.ToString ();
+			level.text = "Level " + entity.stats.CombatLevel ();
 		}
 
 		void Update ()
@@ -64,7 +66,7 @@ namespace EntityControllers.PlayerControllers
 			SetLabels ();
 		}
 
-		public void FireProjectile ()
+		public Transform InstantiatePrefabInMouseDirection (Transform prefab)
 		{
 			Vector2 mousePosition = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
 			Vector3 target = Camera.main.ScreenToWorldPoint (mousePosition);
@@ -75,28 +77,27 @@ namespace EntityControllers.PlayerControllers
 			float angle = Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg + 90;
 			Vector3 rotationVector = new Vector3 (0, 0, angle);
 
-			Transform projectile = MonoBehaviour.Instantiate (arrowPrefab, start, Quaternion.identity);
-			projectile.transform.rotation = Quaternion.Euler (rotationVector);
+			Transform instance = MonoBehaviour.Instantiate (prefab, start, Quaternion.identity);
+			instance.transform.rotation = Quaternion.Euler (rotationVector);
 
-			Physics2D.IgnoreCollision (entity.hitbox, projectile.gameObject.GetComponent<Projectile> ().collider);
+			return instance;
+		}
+
+		public void FireProjectile ()
+		{
+			Transform projectile = InstantiatePrefabInMouseDirection (arrowPrefab);
+			Projectile instance = projectile.gameObject.GetComponent<Projectile> ();
+			Physics2D.IgnoreCollision (entity.hitbox, instance.collider);
+			instance.source = entity;
 		}
 
 		public void SwingSword ()
 		{
-			Vector2 mousePosition = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
-			Vector3 target = Camera.main.ScreenToWorldPoint (mousePosition);
-
-			Vector3 start = entity.hitbox.bounds.center;
-			Vector3 direction = start - target;
-
-			float angle = Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg + 90;
-			Vector3 rotationVector = new Vector3 (0, 0, angle);
-
-			Transform projectile = MonoBehaviour.Instantiate (swordPrefab, start, Quaternion.identity);
-			projectile.SetParent (gameObject.transform);
-			projectile.transform.rotation = Quaternion.Euler (rotationVector);
-
-			Physics2D.IgnoreCollision (entity.hitbox, projectile.gameObject.GetComponent<Sword> ().collider);
+			Transform sword = InstantiatePrefabInMouseDirection (swordPrefab);
+			sword.transform.SetParent (transform);
+			Sword instance = sword.gameObject.GetComponent<Sword> ();
+			Physics2D.IgnoreCollision (entity.hitbox, instance.collider);
+			instance.source = entity;
 		}
 
 		private void MakeMeleeAttack ()

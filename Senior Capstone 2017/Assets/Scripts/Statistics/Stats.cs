@@ -9,12 +9,13 @@ namespace Statistics
     public Entity entity;
 
     public int hitpoints;
-    public int maxHitpoints;
     public float speed;
     public int damage;
     public float attackRange;
     public float attackSpeed;
     public float stamina;
+
+		private int experience;
 
     private float attackCooldown;
     private float healthProgress;
@@ -24,11 +25,13 @@ namespace Statistics
 
     public Stats ()
     {
-      hitpoints = maxHitpoints = 10;
       stamina = 100f;
       healthProgress = 0f;
       healthRegen = 1 / 10f;
 
+			experience = 0;
+
+			hitpoints = MaxHitpoints ();
       skills = Skill.GenerateMap();
     }
 
@@ -44,7 +47,7 @@ namespace Statistics
 
     void RegenerateHealth ()
     {
-      if (hitpoints < maxHitpoints) {
+			if (hitpoints < MaxHitpoints ()) {
         healthProgress += healthRegen * Time.deltaTime;
         if (healthProgress >= 1f) {
           healthProgress = 0f;
@@ -61,5 +64,46 @@ namespace Statistics
       if (attackCooldown > 0) attackCooldown -= Time.deltaTime;
       RegenerateHealth ();
     }
+
+		public int MaxHitpoints ()
+		{
+			return 10 + CombatLevel ();
+		}
+
+		public void GiveExperience (int amount)
+		{
+			experience += amount;
+		}
+
+		public int ExperienceForKill ()
+		{
+			return MaxHitpoints ();
+		}
+
+		public int TotalExperience ()
+		{
+			return experience;
+		}
+
+		public int CombatLevel ()
+		{
+			return Mathf.FloorToInt (Mathf.Sqrt(TotalExperience () / 20) + 1);
+		}
+
+		public int ExperienceForLevel (int level)
+		{
+			return Mathf.FloorToInt (Mathf.Pow ((level - 1), 2)) * 20;
+		}
+
+		public float PercentOfLevelComplete ()
+		{
+			int currentLevelExperience = ExperienceForLevel (CombatLevel ());
+			int nextLevelExperience = ExperienceForLevel (CombatLevel () + 1);
+			int experienceBeyondCurrent = TotalExperience () - currentLevelExperience;
+			int experienceThisLevel = nextLevelExperience - currentLevelExperience;
+
+			float amt = (float) experienceBeyondCurrent / experienceThisLevel;
+			return amt;
+		}
   }
 }

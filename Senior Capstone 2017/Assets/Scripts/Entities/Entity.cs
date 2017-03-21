@@ -47,7 +47,9 @@ namespace Entities
 			if (!stats.CanAttack ()) return;
 
 			stats.Attack ();
-			enemyGameObject.SendMessageUpwards ("TakeDamage", this, SendMessageOptions.DontRequireReceiver);
+
+			Entity entity = enemyGameObject.transform.parent.gameObject.GetComponent<Entity> ();
+			entity.TakeDamage (this);
 		}
 
 		public void AttackIfAble (Entity otherEntity) {
@@ -60,6 +62,9 @@ namespace Entities
 
 		void TakeDamage (Entity offender) {
 			stats.hitpoints -= offender.GetDamage ();
+			if (stats.hitpoints <= 0) {
+				offender.stats.GiveExperience (stats.ExperienceForKill ());
+			}
 		}
 	}
 }

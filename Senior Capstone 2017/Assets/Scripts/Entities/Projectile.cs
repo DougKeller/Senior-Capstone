@@ -6,6 +6,7 @@ namespace Entities
 	{
 		public Entity entity;
 		public new Collider2D collider;
+		public Entity source;
 
 		void Start () {
 			Invoke ("Die", 3f);
@@ -20,11 +21,14 @@ namespace Entities
 		void Die ()
 		{
 			entity.Die ();
+			if (source != null) {
+				source.stats.GiveExperience (entity.stats.TotalExperience ());
+			}
 		}
 
 		void OnTriggerEnter2D (Collider2D collider) {
 			entity.AttackIfAble (collider.gameObject);
-			entity.Die ();
+			Die ();
 		}
 	}
 }

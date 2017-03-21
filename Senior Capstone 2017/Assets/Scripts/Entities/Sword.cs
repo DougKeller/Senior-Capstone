@@ -6,6 +6,7 @@ namespace Entities
 	{
 		public Entity entity;
 		public new Collider2D collider;
+		public Entity source;
 
 		public void SetPositionAndRotation ()
 		{
@@ -13,7 +14,7 @@ namespace Entities
 		}
 
 		void Start () {
-			Invoke ("Die", 0.25f);
+			Invoke ("Die", 0.35f);
 			SetPositionAndRotation ();
 		}
 
@@ -24,6 +25,9 @@ namespace Entities
 		void Die ()
 		{
 			entity.Die ();
+			if (source != null) {
+				source.stats.GiveExperience (entity.stats.TotalExperience ());
+			}
 		}
 
 		void OnTriggerEnter2D (Collider2D collider) {
