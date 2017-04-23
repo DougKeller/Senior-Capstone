@@ -58,7 +58,7 @@
      <Compile Include="Assets\Scripts\EntityControllers\SnakeControllers\Combat.cs" />
      <Compile Include="Assets\Scripts\EntityControllers\SnakeControllers\Movement.cs" />
      <Compile Include="Assets\Scripts\GUI\Bar.cs" />
-     <Compile Include="Assets\Scripts\Statistics\Skill.cs" />
+     <Compile Include="Assets\Scripts\MonsterSpawner.cs" />
      <Compile Include="Assets\Scripts\Statistics\Stats.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GroupLayer.cs" />

@@ -21,8 +21,6 @@ namespace Statistics
     private float healthProgress;
     private float healthRegen;
 
-    public SortedDictionary<Skill.Type, Skill> skills;
-
     public Stats ()
     {
       stamina = 100f;
@@ -32,7 +30,6 @@ namespace Statistics
 			experience = 0;
 
 			hitpoints = MaxHitpoints ();
-      skills = Skill.GenerateMap();
     }
 
     public bool CanAttack ()
