@@ -19,7 +19,7 @@ namespace EntityControllers.PlayerControllers
 		public Text level;
 
 		public enum AttackMode {
-			Bow, Fire, Sword
+			Bow, Sword
 		}
 
 		void Start ()
@@ -35,9 +35,6 @@ namespace EntityControllers.PlayerControllers
 			}
 			if (Input.GetKeyDown (KeyCode.Alpha2)) {
 				attackMode = AttackMode.Bow;
-			}
-			if (Input.GetKeyDown (KeyCode.Alpha3)) {
-				attackMode = AttackMode.Fire;
 			}
 		}
 

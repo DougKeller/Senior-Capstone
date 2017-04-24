@@ -15,7 +15,7 @@ public class MonsterSpawner : MonoBehaviour {
 	int currentWave;
 
 	void Start () {
-		waveLength = 10f;
+		waveLength = 5f;
 		waveCooldown = 0f;
 		currentWave = 0;
 		currentlySpawnedEnemies = new List<Transform> ();

@@ -8,6 +8,7 @@ namespace Statistics
   {
     public Entity entity;
 
+	public int baseHitpoints;
     public int hitpoints;
     public float speed;
     public int damage;
@@ -15,7 +16,7 @@ namespace Statistics
     public float attackSpeed;
     public float stamina;
 
-		private int experience;
+	private int experience;
 
     private float attackCooldown;
     private float healthProgress;
@@ -42,17 +43,22 @@ namespace Statistics
       attackCooldown = attackSpeed;
     }
 
+	private float HealthThreshold ()
+	{
+		return 1f - (CombatLevel () - 1) / 10f;
+	}
+
     void RegenerateHealth ()
     {
-			if (hitpoints < MaxHitpoints ()) {
-        healthProgress += healthRegen * Time.deltaTime;
-        if (healthProgress >= 1f) {
-          healthProgress = 0f;
-          hitpoints++;
-        }
-      } else {
-        healthProgress = 0f;
-      }
+		if (hitpoints < MaxHitpoints ()) {
+			healthProgress += healthRegen * Time.deltaTime;
+			if (healthProgress >= HealthThreshold ()) {
+				healthProgress = 0f;
+				hitpoints++;
+			}
+		} else {
+			healthProgress = 0f;
+		}
     }
 
     void Update ()
@@ -64,7 +70,7 @@ namespace Statistics
 
 		public int MaxHitpoints ()
 		{
-			return 10 + CombatLevel () - 1;
+			return baseHitpoints + CombatLevel () - 1;
 		}
 
 		public void GiveExperience (int amount)
