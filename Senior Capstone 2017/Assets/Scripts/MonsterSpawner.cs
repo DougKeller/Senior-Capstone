@@ -41,7 +41,11 @@ public class MonsterSpawner : MonoBehaviour {
 		float randomX = Random.value - 0.5f;
 		float randomY = Random.value - 0.5f;
 		Vector3 direction = new Vector3 (randomX, randomY, 0f);
-		return player.transform.position + direction.normalized * distance;
+		Vector3 position = player.transform.position + direction.normalized * distance;
+		if (position.x > 48 || position.x < 2 || position.y > -2 || position.y < -48) {
+			return RandomLocationFromPlayer (distance);
+		}
+		return position;
 	}
 
 	List<int> EnemiesForPlayer ()
