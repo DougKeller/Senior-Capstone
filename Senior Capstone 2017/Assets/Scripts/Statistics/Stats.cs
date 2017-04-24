@@ -64,7 +64,7 @@ namespace Statistics
 
 		public int MaxHitpoints ()
 		{
-			return 10 + CombatLevel ();
+			return 10 + CombatLevel () - 1;
 		}
 
 		public void GiveExperience (int amount)
@@ -74,7 +74,7 @@ namespace Statistics
 
 		public int ExperienceForKill ()
 		{
-			return MaxHitpoints ();
+			return MaxHitpoints () * 4;
 		}
 
 		public int TotalExperience ()
